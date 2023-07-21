@@ -1,0 +1,11 @@
+[0.020s] Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[0.120s] [35m[1mScanning dependencies of target sort_ros[0m
+[0.188s] [ 12%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRos.cpp.o[0m
+[1.754s] [01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:[m[K In member function ‘[01m[Kvoid SortRos::rectArrayCallback(visualization_msgs::msg::MarkerArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.754s] [01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:60:20:[m[K [01;31m[Kerror: [m[Kvoid value not ignored as it ought to be
+[1.754s]    60 |     [01;31m[Krects.push_back(rect)[m[K;
+[1.755s]       |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+[3.191s] make[2]: *** [CMakeFiles/sort_ros.dir/build.make:115: CMakeFiles/sort_ros.dir/src/SortRos.cpp.o] Error 1
+[3.191s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sort_ros.dir/all] Error 2
+[3.191s] make: *** [Makefile:141: all] Error 2
+[3.195s] Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '2': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28

@@ -1,0 +1,7 @@
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:[m[K In member function ‘[01m[Kvoid SortRos::rectArrayCallback(visualization_msgs::msg::MarkerArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:60:20:[m[K [01;31m[Kerror: [m[Kvoid value not ignored as it ought to be
+   60 |     [01;31m[Krects.push_back(rect)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+make[2]: *** [CMakeFiles/sort_ros.dir/build.make:115: CMakeFiles/sort_ros.dir/src/SortRos.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sort_ros.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

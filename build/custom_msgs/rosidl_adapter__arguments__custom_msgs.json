@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/bev/bev_ws/src/custom_msgs:msg/Output.msg",
+    "/home/bev/bev_ws/src/custom_msgs:msg/Bbox.msg",
+    "/home/bev/bev_ws/src/custom_msgs:msg/OutputArray.msg"
+  ]
+}

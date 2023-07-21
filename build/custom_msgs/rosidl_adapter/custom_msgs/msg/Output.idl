@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Output.msg
+// generated code does not contain a copyright notice
+
+#include "custom_msgs/msg/Bbox.idl"
+
+module custom_msgs {
+  module msg {
+    struct Output {
+      custom_msgs::msg::Bbox box;
+
+      double score;
+
+      int64 label;
+    };
+  };
+};

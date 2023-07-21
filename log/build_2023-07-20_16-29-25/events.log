@@ -1,0 +1,501 @@
+[0.000000] (-) TimerEvent: {}
+[0.000772] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000867] (tracking_algorithm) JobQueued: {'identifier': 'tracking_algorithm', 'dependencies': OrderedDict([('custom_msgs', '/home/bev/bev_ws/install/custom_msgs')])}
+[0.001499] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.013629] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.014688] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bev/bev_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/custom_msgs'], 'cwd': '/home/bev/bev_ws/build/custom_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099798] (-) TimerEvent: {}
+[0.131547] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199959] (-) TimerEvent: {}
+[0.232867] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.242999] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.300136] (-) TimerEvent: {}
+[0.380744] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.382784] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400294] (-) TimerEvent: {}
+[0.500763] (-) TimerEvent: {}
+[0.523135] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.547351] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.547694] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.550277] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.600961] (-) TimerEvent: {}
+[0.698738] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.701051] (-) TimerEvent: {}
+[0.701467] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801251] (-) TimerEvent: {}
+[0.868481] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.893223] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.893834] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.896029] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.901350] (-) TimerEvent: {}
+[0.920052] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.920359] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.001540] (-) TimerEvent: {}
+[1.101957] (-) TimerEvent: {}
+[1.117287] (custom_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[1.138057] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.142367] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.202073] (-) TimerEvent: {}
+[1.269583] (custom_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.302188] (-) TimerEvent: {}
+[1.314707] (custom_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.392271] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.402293] (-) TimerEvent: {}
+[1.426841] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.454637] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.502417] (-) TimerEvent: {}
+[1.602813] (-) TimerEvent: {}
+[1.634099] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.702991] (-) TimerEvent: {}
+[1.773817] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.803153] (-) TimerEvent: {}
+[1.819006] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.842493] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.845247] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.887992] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.888312] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.888487] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.888641] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.903337] (-) TimerEvent: {}
+[1.930794] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.003520] (-) TimerEvent: {}
+[2.033210] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.047768] (custom_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.048724] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.049382] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.052780] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.084414] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.086113] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/bev/bev_ws/build/custom_msgs\n'}
+[2.095487] (custom_msgs) CommandEnded: {'returncode': 0}
+[2.098565] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[2.098631] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bev/bev_ws/build/custom_msgs', '--', '-j28', '-l28'], 'cwd': '/home/bev/bev_ws/build/custom_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.103635] (-) TimerEvent: {}
+[2.184855] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__cpp\x1b[0m\n'}
+[2.185280] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.203820] (-) TimerEvent: {}
+[2.208159] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.303997] (-) TimerEvent: {}
+[2.404466] (-) TimerEvent: {}
+[2.460491] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.475444] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/output_array__functions.c.o\x1b[0m\n'}
+[2.475994] (custom_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/output__functions.c.o\x1b[0m\n'}
+[2.476617] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/bbox__functions.c.o\x1b[0m\n'}
+[2.485596] (custom_msgs) StdoutLine: {'line': b'[ 10%] Built target custom_msgs__cpp\n'}
+[2.504613] (-) TimerEvent: {}
+[2.505472] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.508567] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.510586] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.546156] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.604802] (-) TimerEvent: {}
+[2.617459] (custom_msgs) StdoutLine: {'line': b'[ 19%] Built target custom_msgs__rosidl_generator_c\n'}
+[2.639790] (custom_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.640700] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.704962] (-) TimerEvent: {}
+[2.724719] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.742447] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.743960] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/output__type_support.cpp.o\x1b[0m\n'}
+[2.749186] (custom_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/bbox__type_support.cpp.o\x1b[0m\n'}
+[2.750365] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/output_array__type_support.cpp.o\x1b[0m\n'}
+[2.760565] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/output_array__type_support.cpp.o\x1b[0m\n'}
+[2.762244] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/output__type_support.cpp.o\x1b[0m\n'}
+[2.762525] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/bbox__type_support.cpp.o\x1b[0m\n'}
+[2.783526] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.805060] (-) TimerEvent: {}
+[2.808341] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/output__type_support.cpp.o\x1b[0m\n'}
+[2.814429] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/bbox__type_support.cpp.o\x1b[0m\n'}
+[2.815452] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/output_array__type_support.cpp.o\x1b[0m\n'}
+[2.859198] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.865524] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.872814] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/output__type_support.cpp.o\x1b[0m\n'}
+[2.877037] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/output_array__type_support.cpp.o\x1b[0m\n'}
+[2.879845] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/output_array__type_support.c.o\x1b[0m\n'}
+[2.880933] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/bbox__type_support.cpp.o\x1b[0m\n'}
+[2.881607] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/output__type_support.c.o\x1b[0m\n'}
+[2.882307] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/bbox__type_support.c.o\x1b[0m\n'}
+[2.905189] (-) TimerEvent: {}
+[2.915771] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.920913] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.957995] (custom_msgs) StdoutLine: {'line': b'[ 59%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[2.963602] (custom_msgs) StdoutLine: {'line': b'[ 59%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[3.002899] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.005341] (-) TimerEvent: {}
+[3.042460] (custom_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.075437] (custom_msgs) StdoutLine: {'line': b'[ 63%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[3.105549] (-) TimerEvent: {}
+[3.162066] (custom_msgs) StdoutLine: {'line': b'[ 63%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.182875] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.205722] (-) TimerEvent: {}
+[3.301859] (custom_msgs) StdoutLine: {'line': b'[ 65%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.305893] (-) TimerEvent: {}
+[3.321701] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.406041] (-) TimerEvent: {}
+[3.506454] (-) TimerEvent: {}
+[3.573992] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.595304] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/bbox__type_support_c.cpp.o\x1b[0m\n'}
+[3.604250] (custom_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/output__type_support_c.cpp.o\x1b[0m\n'}
+[3.605730] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/output_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.606523] (-) TimerEvent: {}
+[3.706916] (-) TimerEvent: {}
+[3.807417] (-) TimerEvent: {}
+[3.900942] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.907580] (-) TimerEvent: {}
+[4.008013] (-) TimerEvent: {}
+[4.011986] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.030139] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs\x1b[0m\n'}
+[4.051834] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs\n'}
+[4.073081] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__py\x1b[0m\n'}
+[4.096138] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.108156] (-) TimerEvent: {}
+[4.208582] (-) TimerEvent: {}
+[4.309093] (-) TimerEvent: {}
+[4.409476] (-) TimerEvent: {}
+[4.509951] (-) TimerEvent: {}
+[4.551004] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__py\n'}
+[4.569715] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__python\x1b[0m\n'}
+[4.610081] (-) TimerEvent: {}
+[4.612765] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_bbox_s.c.o\x1b[0m\n'}
+[4.613083] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_output_s.c.o\x1b[0m\n'}
+[4.614273] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_output_array_s.c.o\x1b[0m\n'}
+[4.710197] (-) TimerEvent: {}
+[4.729660] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__python.so\x1b[0m\n'}
+[4.810340] (-) TimerEvent: {}
+[4.817535] (custom_msgs) StdoutLine: {'line': b'[ 87%] Built target custom_msgs__python\n'}
+[4.841188] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.841608] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.841781] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.870068] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.874541] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.875653] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.910479] (-) TimerEvent: {}
+[4.957951] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.963887] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.973751] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.010595] (-) TimerEvent: {}
+[5.015661] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[5.045450] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.045805] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.065053] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.110795] (-) TimerEvent: {}
+[5.211412] (-) TimerEvent: {}
+[5.247072] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[5.271661] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bev/bev_ws/build/custom_msgs'], 'cwd': '/home/bev/bev_ws/build/custom_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.293229] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.293619] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[5.294030] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.294398] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.294562] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/output.h\n'}
+[5.294709] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.294844] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__functions.h\n'}
+[5.294978] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__type_support.h\n'}
+[5.295112] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__type_support.h\n'}
+[5.295296] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__struct.h\n'}
+[5.295561] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__functions.h\n'}
+[5.295705] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__functions.c\n'}
+[5.295842] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__functions.c\n'}
+[5.295975] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__struct.h\n'}
+[5.296108] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__functions.c\n'}
+[5.296239] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__functions.h\n'}
+[5.296441] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__struct.h\n'}
+[5.296570] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__type_support.h\n'}
+[5.296704] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/output_array.h\n'}
+[5.296866] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/bbox.h\n'}
+[5.296994] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.297130] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[5.297263] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[5.297396] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[5.297619] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[5.297886] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.298026] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.298160] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.298294] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__rosidl_typesupport_fastrtps_c.h\n'}
+[5.298428] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__rosidl_typesupport_fastrtps_c.h\n'}
+[5.298559] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__rosidl_typesupport_fastrtps_c.h\n'}
+[5.298690] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.298821] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.299105] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.299296] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.299435] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.299570] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.299704] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.299835] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.299967] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.300098] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/dds_fastrtps\n'}
+[5.300230] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.300363] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.300495] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.300631] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.300789] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.300920] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.301212] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__type_support.c\n'}
+[5.301353] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__type_support.c\n'}
+[5.301488] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__rosidl_typesupport_introspection_c.h\n'}
+[5.301622] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__rosidl_typesupport_introspection_c.h\n'}
+[5.301756] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__type_support.c\n'}
+[5.301898] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__rosidl_typesupport_introspection_c.h\n'}
+[5.302205] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.302340] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.302581] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.302716] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[5.302851] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.302985] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.303116] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.303250] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/bbox.hpp\n'}
+[5.303382] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.303514] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__type_support.hpp\n'}
+[5.303644] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__traits.hpp\n'}
+[5.303774] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__struct.hpp\n'}
+[5.303905] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__struct.hpp\n'}
+[5.304038] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__builder.hpp\n'}
+[5.304171] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__builder.hpp\n'}
+[5.304303] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__struct.hpp\n'}
+[5.304436] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__traits.hpp\n'}
+[5.304679] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__type_support.hpp\n'}
+[5.304815] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__type_support.hpp\n'}
+[5.304938] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__builder.hpp\n'}
+[5.305061] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__traits.hpp\n'}
+[5.305185] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.305310] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/output_array.hpp\n'}
+[5.305435] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/output.hpp\n'}
+[5.305559] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs\n'}
+[5.305685] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg\n'}
+[5.305810] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail\n'}
+[5.305948] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__type_support.cpp\n'}
+[5.306075] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.306199] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.306323] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.306447] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/output_array__type_support.cpp\n'}
+[5.306556] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/include/custom_msgs/msg/detail/bbox__type_support.cpp\n'}
+[5.306646] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.306736] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.306827] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[5.306917] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.307006] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[5.307095] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[5.307184] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py\n'}
+[5.311472] (-) TimerEvent: {}
+[5.330383] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py'...\n"}
+[5.333778] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg\n'}
+[5.334145] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/__init__.py\n'}
+[5.334371] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_output_array.py\n'}
+[5.334528] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_output_array_s.c\n'}
+[5.334668] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_bbox.py\n'}
+[5.334805] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_bbox_s.c\n'}
+[5.334940] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_output_s.c\n'}
+[5.335074] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_output.py\n'}
+[5.335259] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.335478] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.335686] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.335847] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.335983] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.336117] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.336250] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__python.so\n'}
+[5.336383] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__python.so" to ""\n'}
+[5.336561] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/Output.idl\n'}
+[5.336840] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/Bbox.idl\n'}
+[5.336978] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/OutputArray.idl\n'}
+[5.337112] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/Output.msg\n'}
+[5.337244] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/Bbox.msg\n'}
+[5.337375] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/msg/OutputArray.msg\n'}
+[5.337508] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[5.337642] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[5.337777] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[5.337924] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[5.338185] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[5.338361] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[5.338494] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[5.338626] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[5.338758] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[5.338890] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[5.339025] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[5.339159] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[5.339294] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport.cmake\n'}
+[5.339427] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.339559] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.339793] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.339922] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.340048] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.340175] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.340310] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.340443] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.340577] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.340788] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.340929] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.341060] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.341195] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.341328] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.341461] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.341593] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.341725] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.342393] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[5.342673] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[5.342832] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[5.343802] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.411789] (-) TimerEvent: {}
+[5.512418] (-) TimerEvent: {}
+[5.597675] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[5.602511] (tracking_algorithm) JobStarted: {'identifier': 'tracking_algorithm'}
+[5.613817] (-) TimerEvent: {}
+[5.614703] (tracking_algorithm) JobProgress: {'identifier': 'tracking_algorithm', 'progress': 'cmake'}
+[5.615486] (tracking_algorithm) Command: {'cmd': ['/usr/bin/cmake', '/home/bev/bev_ws/src/tracking_algorithm', '-DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/tracking_algorithm'], 'cwd': '/home/bev/bev_ws/build/tracking_algorithm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/tracking_algorithm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy')]), 'shell': False}
+[5.713999] (-) TimerEvent: {}
+[5.726823] (tracking_algorithm) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[5.803386] (tracking_algorithm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[5.806791] (tracking_algorithm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[5.814142] (-) TimerEvent: {}
+[5.914604] (-) TimerEvent: {}
+[5.930422] (tracking_algorithm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[5.932428] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.014736] (-) TimerEvent: {}
+[6.074791] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.101803] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.102173] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.105956] (tracking_algorithm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.114892] (-) TimerEvent: {}
+[6.215277] (-) TimerEvent: {}
+[6.248849] (tracking_algorithm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.251555] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.315405] (-) TimerEvent: {}
+[6.397485] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.415589] (-) TimerEvent: {}
+[6.420513] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.421142] (tracking_algorithm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.423378] (tracking_algorithm) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[6.448150] (tracking_algorithm) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.448517] (tracking_algorithm) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.515768] (-) TimerEvent: {}
+[6.616223] (-) TimerEvent: {}
+[6.649820] (tracking_algorithm) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[6.680762] (tracking_algorithm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.685083] (tracking_algorithm) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.716386] (-) TimerEvent: {}
+[6.812471] (tracking_algorithm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[6.816545] (-) TimerEvent: {}
+[6.862130] (tracking_algorithm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.916747] (-) TimerEvent: {}
+[6.922952] (tracking_algorithm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.964227] (tracking_algorithm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[6.965124] (tracking_algorithm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.968984] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.016921] (-) TimerEvent: {}
+[7.105425] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.105834] (tracking_algorithm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.117077] (-) TimerEvent: {}
+[7.217529] (-) TimerEvent: {}
+[7.250779] (tracking_algorithm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.251200] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.317721] (-) TimerEvent: {}
+[7.368974] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.369451] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.417905] (-) TimerEvent: {}
+[7.509612] (tracking_algorithm) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[7.512362] (tracking_algorithm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.517982] (-) TimerEvent: {}
+[7.618351] (-) TimerEvent: {}
+[7.644435] (tracking_algorithm) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[7.718468] (-) TimerEvent: {}
+[7.745168] (tracking_algorithm) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0") \n'}
+[7.745522] (tracking_algorithm) StdoutLine: {'line': b'-- Found custom_msgs: 0.0.0 (/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake)\n'}
+[7.774357] (tracking_algorithm) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.818593] (-) TimerEvent: {}
+[7.842092] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.842664] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.843304] (tracking_algorithm) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/bev/bev_ws/src/tracking_algorithm/include\n'}
+[7.843473] (tracking_algorithm) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.843970] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.844129] (tracking_algorithm) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.844573] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.845174] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.845350] (tracking_algorithm) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.845555] (tracking_algorithm) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.847818] (tracking_algorithm) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.860106] (tracking_algorithm) StdoutLine: {'line': b'-- Generating done\n'}
+[7.860932] (tracking_algorithm) StdoutLine: {'line': b'-- Build files have been written to: /home/bev/bev_ws/build/tracking_algorithm\n'}
+[7.870353] (tracking_algorithm) CommandEnded: {'returncode': 0}
+[7.871728] (tracking_algorithm) JobProgress: {'identifier': 'tracking_algorithm', 'progress': 'build'}
+[7.872710] (tracking_algorithm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bev/bev_ws/build/tracking_algorithm', '--', '-j28', '-l28'], 'cwd': '/home/bev/bev_ws/build/tracking_algorithm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/tracking_algorithm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy')]), 'shell': False}
+[7.918760] (-) TimerEvent: {}
+[7.955694] (tracking_algorithm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sort_ros\x1b[0m\n'}
+[8.018882] (-) TimerEvent: {}
+[8.027325] (tracking_algorithm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/Tracker.cpp.o\x1b[0m\n'}
+[8.027734] (tracking_algorithm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/Sort.cpp.o\x1b[0m\n'}
+[8.027925] (tracking_algorithm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/Hungarian.cpp.o\x1b[0m\n'}
+[8.028091] (tracking_algorithm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/main.cpp.o\x1b[0m\n'}
+[8.028247] (tracking_algorithm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/TrackerState.cpp.o\x1b[0m\n'}
+[8.028472] (tracking_algorithm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRect.cpp.o\x1b[0m\n'}
+[8.028626] (tracking_algorithm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRos.cpp.o\x1b[0m\n'}
+[8.118985] (-) TimerEvent: {}
+[8.219320] (-) TimerEvent: {}
+[8.319782] (-) TimerEvent: {}
+[8.420295] (-) TimerEvent: {}
+[8.520792] (-) TimerEvent: {}
+[8.621252] (-) TimerEvent: {}
+[8.721690] (-) TimerEvent: {}
+[8.822234] (-) TimerEvent: {}
+[8.922688] (-) TimerEvent: {}
+[9.023139] (-) TimerEvent: {}
+[9.123646] (-) TimerEvent: {}
+[9.224149] (-) TimerEvent: {}
+[9.324665] (-) TimerEvent: {}
+[9.425156] (-) TimerEvent: {}
+[9.525657] (-) TimerEvent: {}
+[9.626174] (-) TimerEvent: {}
+[9.726630] (-) TimerEvent: {}
+[9.827130] (-) TimerEvent: {}
+[9.927636] (-) TimerEvent: {}
+[10.028094] (-) TimerEvent: {}
+[10.128602] (-) TimerEvent: {}
+[10.229112] (-) TimerEvent: {}
+[10.329638] (-) TimerEvent: {}
+[10.430118] (-) TimerEvent: {}
+[10.530577] (-) TimerEvent: {}
+[10.631039] (-) TimerEvent: {}
+[10.731575] (-) TimerEvent: {}
+[10.832082] (-) TimerEvent: {}
+[10.932574] (-) TimerEvent: {}
+[11.033064] (-) TimerEvent: {}
+[11.133553] (-) TimerEvent: {}
+[11.234019] (-) TimerEvent: {}
+[11.334451] (-) TimerEvent: {}
+[11.434873] (-) TimerEvent: {}
+[11.535306] (-) TimerEvent: {}
+[11.635797] (-) TimerEvent: {}
+[11.736241] (-) TimerEvent: {}
+[11.836726] (-) TimerEvent: {}
+[11.937233] (-) TimerEvent: {}
+[12.037742] (-) TimerEvent: {}
+[12.138215] (-) TimerEvent: {}
+[12.238666] (-) TimerEvent: {}
+[12.339125] (-) TimerEvent: {}
+[12.439574] (-) TimerEvent: {}
+[12.540087] (-) TimerEvent: {}
+[12.596487] (tracking_algorithm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sort_ros\x1b[0m\n'}
+[12.640279] (-) TimerEvent: {}
+[12.740770] (-) TimerEvent: {}
+[12.841243] (-) TimerEvent: {}
+[12.889643] (tracking_algorithm) StdoutLine: {'line': b'[100%] Built target sort_ros\n'}
+[12.905399] (tracking_algorithm) CommandEnded: {'returncode': 0}
+[12.941484] (-) TimerEvent: {}
+[12.984896] (tracking_algorithm) JobProgress: {'identifier': 'tracking_algorithm', 'progress': 'install'}
+[12.986190] (tracking_algorithm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bev/bev_ws/build/tracking_algorithm'], 'cwd': '/home/bev/bev_ws/build/tracking_algorithm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'bev'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1665'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib'), ('HOME', '/home/bev'), ('OLDPWD', '/home/bev/bev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1445'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '229725'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'bev'), ('JOURNAL_STREAM', '8:33772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/bev/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/bin:/home/bev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda-11.3/bin'), ('SESSION_MANAGER', 'local/bev:@/tmp/.ICE-unix/1700,unix/bev:/tmp/.ICE-unix/1700'), ('INVOCATION_ID', '2db898093f17434ea6f0af50ddd81ff3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('CUDARDIR', '/usr/local/cuda-11.3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:89e62560-43a5-4da5-9aae-9c2c4b0eaaa0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bev/bev_ws/build/tracking_algorithm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy')]), 'shell': False}
+[13.004814] (tracking_algorithm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.005176] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/lib/tracking_algorithm/sort_ros\n'}
+[13.007703] (tracking_algorithm) StdoutLine: {'line': b'-- Set runtime path of "/home/bev/bev_ws/install/tracking_algorithm/lib/tracking_algorithm/sort_ros" to ""\n'}
+[13.007934] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/package_run_dependencies/tracking_algorithm\n'}
+[13.008145] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/parent_prefix_path/tracking_algorithm\n'}
+[13.008344] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/ament_prefix_path.sh\n'}
+[13.008561] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/ament_prefix_path.dsv\n'}
+[13.008712] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/path.sh\n'}
+[13.008911] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/path.dsv\n'}
+[13.009060] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.bash\n'}
+[13.009204] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.sh\n'}
+[13.009391] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.zsh\n'}
+[13.009645] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.dsv\n'}
+[13.009789] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv\n'}
+[13.009970] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/packages/tracking_algorithm\n'}
+[13.010112] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/cmake/tracking_algorithmConfig.cmake\n'}
+[13.010264] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/cmake/tracking_algorithmConfig-version.cmake\n'}
+[13.010401] (tracking_algorithm) StdoutLine: {'line': b'-- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.xml\n'}
+[13.011734] (tracking_algorithm) CommandEnded: {'returncode': 0}
+[13.041697] (-) TimerEvent: {}
+[13.136056] (tracking_algorithm) JobEnded: {'identifier': 'tracking_algorithm', 'rc': 0}
+[13.137345] (-) EventReactorShutdown: {}

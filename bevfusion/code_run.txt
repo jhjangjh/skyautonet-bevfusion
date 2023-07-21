@@ -1,0 +1,1 @@
+torchpack dist-run -np 1 python tools/visualize_rviz.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml --checkpoint pretrained/bevfusion-det.pth --mode pred --bbox-score 0.7

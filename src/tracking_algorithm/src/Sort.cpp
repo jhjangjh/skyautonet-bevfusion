@@ -46,8 +46,13 @@ std::vector<SortRect> Sort::update(std::vector<SortRect> detections) {
   iouMatrix.resize(predictions.size(), vector<double>(detections.size(), 0));
 
   for (std::vector<SortRect>::size_type i = 0; i < predictions.size(); i++)
-    for (std::vector<SortRect>::size_type j = 0; j < detections.size(); j++)
+    for (std::vector<SortRect>::size_type j = 0; j < detections.size(); j++){
+        // if(iou(predictions[i], detections[j]) != 0)
+        // {
+        //     std::cout << "iou : " << iou(predictions[i], detections[j]) << std::endl;
+        // } 
       iouMatrix[i][j] = 1 - iou(predictions[i], detections[j]);
+    }
 
   vector<int> assignment; 
 
@@ -119,8 +124,6 @@ std::vector<SortRect> Sort::update(std::vector<SortRect> detections) {
 
 float Sort::iou(SortRect rect1, SortRect rect2) {
 
-    //
-    
     // interection_num = 0;
 
     // // SortRect -> Point_struct

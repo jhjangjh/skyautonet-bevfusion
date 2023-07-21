@@ -20,6 +20,7 @@ private:
   void rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr markerArray);
   
   rclcpp::Publisher<MarkerArray>::SharedPtr pub;
+
   rclcpp::Subscription<custom_msgs::msg::OutputArray>::SharedPtr sub;
 
   Sort* sorter;

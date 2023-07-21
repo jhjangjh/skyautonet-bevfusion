@@ -1,0 +1,7 @@
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/Sort.cpp:[m[K In member function ‘[01m[Kstd::vector<SortRect> Sort::update(std::vector<SortRect>)[m[K’:
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/Sort.cpp:48:3:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+   48 |   [01;35m[Kfor[m[K (std::vector<SortRect>::size_type i = 0; i < predictions.size(); i++)
+      |   [01;35m[K^~~[m[K
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/Sort.cpp:52:5:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+   52 |     [01;36m[Kfor[m[K (std::vector<SortRect>::size_type i = 0; i < predictions.size(); i++)
+      |     [01;36m[K^~~[m[K

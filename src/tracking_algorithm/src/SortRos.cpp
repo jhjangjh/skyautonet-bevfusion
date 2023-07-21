@@ -9,13 +9,14 @@ SortRos::SortRos() : Node("sort_ros") {
 void SortRos::setup() {
   double maxAge = 7;
   double minHits = 0;
-  double iouThreshold = 0.005;
+  double iouThreshold = 0.00001;
 
   sorter = new Sort(maxAge, minHits, iouThreshold);
   // sorter = new Sort(param_maxAge, param_minHits, param_iouThreshold);
 
   pub = this->create_publisher<MarkerArray>("/markers_tracked",
                                             rclcpp::QoS(rclcpp::KeepLast(10)));
+
   sub = this->create_subscription<custom_msgs::msg::OutputArray>(
       "/bev_output", rclcpp::QoS(rclcpp::KeepLast(10)),
       std::bind(&SortRos::rectArrayCallback, this, std::placeholders::_1));
@@ -158,6 +159,7 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
   }
 
   pub->publish(markerArrayOutput);
+
   std:: cout << "===========================" << std::endl;
 
   std::chrono::duration<double>sec = std::chrono::system_clock::now() - start;

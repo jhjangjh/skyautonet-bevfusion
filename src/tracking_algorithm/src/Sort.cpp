@@ -119,6 +119,8 @@ std::vector<SortRect> Sort::update(std::vector<SortRect> detections) {
 
 float Sort::iou(SortRect rect1, SortRect rect2) {
 
+    //
+    
     // interection_num = 0;
 
     // // SortRect -> Point_struct

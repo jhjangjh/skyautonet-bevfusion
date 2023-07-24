@@ -47,7 +47,9 @@ void Data::Parse()
 
 void Data::Collect()
 {
+  Document d;
   
+
 }
 
 int main (int argc, char * argv[])

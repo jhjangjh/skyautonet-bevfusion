@@ -1,0 +1,35 @@
+[0.023s] Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.062s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.098s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.293s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.342s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.344s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.478s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.517s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.518s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.633s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.727s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.729s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.731s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/data_pkg/include
+[0.731s] -- Configured cppcheck exclude dirs and/or files: 
+[0.738s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.738s] -- Configured cpplint exclude dirs and/or files: 
+[0.740s] -- Added test 'lint_cmake' to check CMake code style
+[0.741s] -- Added test 'uncrustify' to check C / C++ code style
+[0.741s] -- Configured uncrustify additional arguments: 
+[0.741s] -- Added test 'xmllint' to check XML markup files
+[0.742s] -- Configuring done
+[0.742s] -- Generating done
+[0.744s] -- Build files have been written to: /home/bev/bev_ws/build/data_pkg
+[0.791s] [35m[1mScanning dependencies of target data_collection[0m
+[0.839s] [ 33%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o[0m
+[0.847s] [ 66%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[0.855s] [01m[K/home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp:76:10:[m[K [01;31m[Kfatal error: [m[Kjson/json.h: No such file or directory
+[0.856s]    76 | #include [01;31m[K"json/json.h"[m[K
+[0.856s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.856s] compilation terminated.
+[0.857s] make[2]: *** [CMakeFiles/data_collection.dir/build.make:76: CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o] Error 1
+[0.857s] make[2]: *** Waiting for unfinished jobs....
+[4.809s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+[4.809s] make: *** [Makefile:141: all] Error 2
+[4.812s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28

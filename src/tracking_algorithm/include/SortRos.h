@@ -19,7 +19,9 @@ public:
 private:
   void rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr markerArray);
   
-  rclcpp::Publisher<MarkerArray>::SharedPtr pub;
+  rclcpp::Publisher<MarkerArray>::SharedPtr viz_pub;
+
+  rclcpp::Publisher<custom_msgs::msg::OutputArray>::SharedPtr output_pub;
 
   rclcpp::Subscription<custom_msgs::msg::OutputArray>::SharedPtr sub;
 

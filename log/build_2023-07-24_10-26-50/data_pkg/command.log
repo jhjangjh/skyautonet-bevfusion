@@ -1,0 +1,4 @@
+Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg

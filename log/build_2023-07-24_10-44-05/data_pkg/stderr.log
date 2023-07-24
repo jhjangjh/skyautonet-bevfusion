@@ -1,0 +1,18 @@
+In file included from [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:1[m[K:
+[01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:[m[K In constructor ‘[01m[KData::Data()[m[K’:
+[01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:19:108:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback[m[K’ is not a member of ‘[01m[KData[m[K’
+   19 | sgs::msg::String>("topic_name", qos_profile,std::bind(&Data::[01;31m[Kcallback[m[K, this, _1));
+      |                                                              [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:[m[K At global scope:
+[01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:3:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Data::callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’
+    3 | void [01;31m[KData[m[K::callback(const std_msgs::msg::String::SharedPtr msg)
+      |      [01;31m[K^~~~[m[K
+[01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:3:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Data::callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:1[m[K:
+[01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Data[m[K’ defined here
+   13 | class [01;36m[KData[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/data_collection.dir/build.make:63: CMakeFiles/data_collection.dir/src/data_collection.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

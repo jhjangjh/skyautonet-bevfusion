@@ -19,8 +19,21 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(custom_msgs REQUIRED)
 
 include_directories(include)
+
+add_executable(data_collection src/data_collection.cpp src/jsoncpp.cpp)
+ament_target_dependencies(data_collection
+rclcpp
+std_msgs
+custom_msgs
+)
+
+install(TARGETS
+data_collection
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

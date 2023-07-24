@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named data_collection
+
+# Build rule for target.
+data_collection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 data_collection
+.PHONY : data_collection
+
+# fast build rule for target.
+data_collection/fast:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/build
+.PHONY : data_collection/fast
+
+#=============================================================================
 # Target rules for targets named data_pkg_uninstall
 
 # Build rule for target.
@@ -193,6 +206,60 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/data_collection.o: src/data_collection.cpp.o
+
+.PHONY : src/data_collection.o
+
+# target to build an object file
+src/data_collection.cpp.o:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/data_collection.cpp.o
+.PHONY : src/data_collection.cpp.o
+
+src/data_collection.i: src/data_collection.cpp.i
+
+.PHONY : src/data_collection.i
+
+# target to preprocess a source file
+src/data_collection.cpp.i:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/data_collection.cpp.i
+.PHONY : src/data_collection.cpp.i
+
+src/data_collection.s: src/data_collection.cpp.s
+
+.PHONY : src/data_collection.s
+
+# target to generate assembly for a file
+src/data_collection.cpp.s:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/data_collection.cpp.s
+.PHONY : src/data_collection.cpp.s
+
+src/jsoncpp.o: src/jsoncpp.cpp.o
+
+.PHONY : src/jsoncpp.o
+
+# target to build an object file
+src/jsoncpp.cpp.o:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o
+.PHONY : src/jsoncpp.cpp.o
+
+src/jsoncpp.i: src/jsoncpp.cpp.i
+
+.PHONY : src/jsoncpp.i
+
+# target to preprocess a source file
+src/jsoncpp.cpp.i:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.i
+.PHONY : src/jsoncpp.cpp.i
+
+src/jsoncpp.s: src/jsoncpp.cpp.s
+
+.PHONY : src/jsoncpp.s
+
+# target to generate assembly for a file
+src/jsoncpp.cpp.s:
+	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.s
+.PHONY : src/jsoncpp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,8 +273,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... data_collection"
 	@echo "... data_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... src/data_collection.o"
+	@echo "... src/data_collection.i"
+	@echo "... src/data_collection.s"
+	@echo "... src/jsoncpp.o"
+	@echo "... src/jsoncpp.i"
+	@echo "... src/jsoncpp.s"
 .PHONY : help
 
 

@@ -14,8 +14,11 @@ void SortRos::setup() {
   sorter = new Sort(maxAge, minHits, iouThreshold);
   // sorter = new Sort(param_maxAge, param_minHits, param_iouThreshold);
 
-  pub = this->create_publisher<MarkerArray>("/markers_tracked",
+  viz_pub = this->create_publisher<MarkerArray>("/markers_tracked",
                                             rclcpp::QoS(rclcpp::KeepLast(10)));
+
+  output_pub = this->create_publisher<custom_msgs::msg::OutputArray>("/track_output",
+                                            rclcpp::QoS(rclcpp::KeepLast(10)));                                            
 
   sub = this->create_subscription<custom_msgs::msg::OutputArray>(
       "/bev_output", rclcpp::QoS(rclcpp::KeepLast(10)),
@@ -158,7 +161,28 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
     markerArrayOutput.markers.push_back(marker);
   }
 
-  pub->publish(markerArrayOutput);
+  custom_msgs::msg::OutputArray track_output;
+  track_output.header.frame_id = frame_id;
+  track_output.header.stamp = this->now();
+
+  for (auto rect : output) {
+    custom_msgs::msg::Output track;
+
+    track.box.pos_x = rect.centerX;
+    track.box.pos_y = rect.centerY;
+    track.box.width = rect.width;
+    track.box.length = rect.length;
+    track.box.height = rect.height;
+    track.box.yaw = rect.yaw;
+
+    track.score = rect.score;
+    track.label = track.label;
+
+    track_output.outputs.push_back(track);
+  }
+
+  viz_pub->publish(markerArrayOutput);
+  output_pub->publish(track_output);
 
   std:: cout << "===========================" << std::endl;
 

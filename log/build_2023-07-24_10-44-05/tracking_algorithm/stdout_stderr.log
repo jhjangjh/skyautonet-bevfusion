@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target sort_ros[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRos.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/main.cpp.o[0m
+[ 37%] [32m[1mLinking CXX executable sort_ros[0m
+[100%] Built target sort_ros

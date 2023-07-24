@@ -1,0 +1,6 @@
+[0.020s] Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[0.114s] [35m[1mScanning dependencies of target sort_ros[0m
+[0.169s] [ 12%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRos.cpp.o[0m
+[0.169s] [ 25%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/main.cpp.o[0m
+[4.870s] [ 37%] [32m[1mLinking CXX executable sort_ros[0m
+[5.196s] [100%] Built target sort_ros

@@ -1,0 +1,22 @@
+[0.019s] Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.100s] [35m[1mScanning dependencies of target data_collection[0m
+[0.144s] [ 33%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[1.161s] In file included from [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:1[m[K:
+[1.162s] [01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:[m[K In constructor ‘[01m[KData::Data()[m[K’:
+[1.162s] [01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:19:108:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback[m[K’ is not a member of ‘[01m[KData[m[K’
+[1.162s]    19 | sgs::msg::String>("topic_name", qos_profile,std::bind(&Data::[01;31m[Kcallback[m[K, this, _1));
+[1.162s]       |                                                              [01;31m[K^~~~~~~~[m[K
+[1.162s] 
+[1.162s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:[m[K At global scope:
+[1.162s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:3:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Data::callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’
+[1.163s]     3 | void [01;31m[KData[m[K::callback(const std_msgs::msg::String::SharedPtr msg)
+[1.163s]       |      [01;31m[K^~~~[m[K
+[1.163s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:3:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Data::callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’
+[1.163s] In file included from [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:1[m[K:
+[1.163s] [01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Data[m[K’ defined here
+[1.163s]    13 | class [01;36m[KData[m[K : public rclcpp::Node
+[1.163s]       |       [01;36m[K^~~~[m[K
+[1.448s] make[2]: *** [CMakeFiles/data_collection.dir/build.make:63: CMakeFiles/data_collection.dir/src/data_collection.cpp.o] Error 1
+[1.448s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+[1.448s] make: *** [Makefile:141: all] Error 2
+[1.453s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28

@@ -8,7 +8,8 @@
                 "/opt/ros/foxy/include",
                 "/usr/include/opencv4",
                 "${workspaceFolder}/install/custom_msgs/include",
-                "/usr/include/pcl-1.10"
+                "/usr/include/pcl-1.10",
+                "${workspaceFolder}/src/data_pkg/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

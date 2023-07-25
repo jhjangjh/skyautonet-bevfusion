@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Output_box
+{
+public:
+  explicit Init_Output_box(::custom_msgs::msg::Output & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::msg::Output box(::custom_msgs::msg::Output::_box_type arg)
+  {
+    msg_.box = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Output msg_;
+};
+
 class Init_Output_label
 {
 public:
   explicit Init_Output_label(::custom_msgs::msg::Output & msg)
   : msg_(msg)
   {}
-  ::custom_msgs::msg::Output label(::custom_msgs::msg::Output::_label_type arg)
+  Init_Output_box label(::custom_msgs::msg::Output::_label_type arg)
   {
     msg_.label = std::move(arg);
-    return std::move(msg_);
+    return Init_Output_box(msg_);
   }
 
 private:
@@ -52,15 +68,15 @@ private:
   ::custom_msgs::msg::Output msg_;
 };
 
-class Init_Output_box
+class Init_Output_id
 {
 public:
-  Init_Output_box()
+  Init_Output_id()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Output_score box(::custom_msgs::msg::Output::_box_type arg)
+  Init_Output_score id(::custom_msgs::msg::Output::_id_type arg)
   {
-    msg_.box = std::move(arg);
+    msg_.id = std::move(arg);
     return Init_Output_score(msg_);
   }
 
@@ -79,7 +95,7 @@ template<>
 inline
 auto build<::custom_msgs::msg::Output>()
 {
-  return custom_msgs::msg::builder::Init_Output_box();
+  return custom_msgs::msg::builder::Init_Output_id();
 }
 
 }  // namespace custom_msgs

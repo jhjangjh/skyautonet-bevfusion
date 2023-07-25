@@ -21,13 +21,14 @@ custom_msgs__msg__Output__init(custom_msgs__msg__Output * msg)
   if (!msg) {
     return false;
   }
+  // id
+  // score
+  // label
   // box
   if (!custom_msgs__msg__Bbox__init(&msg->box)) {
     custom_msgs__msg__Output__fini(msg);
     return false;
   }
-  // score
-  // label
   return true;
 }
 
@@ -37,10 +38,11 @@ custom_msgs__msg__Output__fini(custom_msgs__msg__Output * msg)
   if (!msg) {
     return;
   }
-  // box
-  custom_msgs__msg__Bbox__fini(&msg->box);
+  // id
   // score
   // label
+  // box
+  custom_msgs__msg__Bbox__fini(&msg->box);
 }
 
 bool
@@ -49,10 +51,8 @@ custom_msgs__msg__Output__are_equal(const custom_msgs__msg__Output * lhs, const 
   if (!lhs || !rhs) {
     return false;
   }
-  // box
-  if (!custom_msgs__msg__Bbox__are_equal(
-      &(lhs->box), &(rhs->box)))
-  {
+  // id
+  if (lhs->id != rhs->id) {
     return false;
   }
   // score
@@ -61,6 +61,12 @@ custom_msgs__msg__Output__are_equal(const custom_msgs__msg__Output * lhs, const 
   }
   // label
   if (lhs->label != rhs->label) {
+    return false;
+  }
+  // box
+  if (!custom_msgs__msg__Bbox__are_equal(
+      &(lhs->box), &(rhs->box)))
+  {
     return false;
   }
   return true;
@@ -74,16 +80,18 @@ custom_msgs__msg__Output__copy(
   if (!input || !output) {
     return false;
   }
+  // id
+  output->id = input->id;
+  // score
+  output->score = input->score;
+  // label
+  output->label = input->label;
   // box
   if (!custom_msgs__msg__Bbox__copy(
       &(input->box), &(output->box)))
   {
     return false;
   }
-  // score
-  output->score = input->score;
-  // label
-  output->label = input->label;
   return true;
 }
 

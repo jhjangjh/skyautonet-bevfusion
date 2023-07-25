@@ -24,9 +24,10 @@ extern "C"
 // Struct defined in msg/Output in the package custom_msgs.
 typedef struct custom_msgs__msg__Output
 {
-  custom_msgs__msg__Bbox box;
+  int64_t id;
   double score;
   int64_t label;
+  custom_msgs__msg__Bbox box;
 } custom_msgs__msg__Output;
 
 // Struct for a sequence of custom_msgs__msg__Output.

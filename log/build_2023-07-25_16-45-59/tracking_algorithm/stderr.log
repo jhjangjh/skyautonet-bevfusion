@@ -1,0 +1,4 @@
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:[m[K In member function ‘[01m[Kvoid SortRos::rectArrayCallback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/tracking_algorithm/src/SortRos.cpp:180:14:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  180 |     [01;35m[Ktrack.id = rect.id[m[K;
+      |     [01;35m[K~~~~~~~~~^~~~~~~~~[m[K

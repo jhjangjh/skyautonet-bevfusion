@@ -37,16 +37,16 @@ void Output__rosidl_typesupport_introspection_c__Output_fini_function(void * mes
   custom_msgs__msg__Output__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Output__rosidl_typesupport_introspection_c__Output_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember Output__rosidl_typesupport_introspection_c__Output_message_member_array[4] = {
   {
-    "box",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    "id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
+    NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_msgs__msg__Output, box),  // bytes offset in struct
+    offsetof(custom_msgs__msg__Output, id),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -82,13 +82,28 @@ static rosidl_typesupport_introspection_c__MessageMember Output__rosidl_typesupp
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "box",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Output, box),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers Output__rosidl_typesupport_introspection_c__Output_message_members = {
   "custom_msgs__msg",  // message namespace
   "Output",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(custom_msgs__msg__Output),
   Output__rosidl_typesupport_introspection_c__Output_message_member_array,  // message members
   Output__rosidl_typesupport_introspection_c__Output_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -106,7 +121,7 @@ static rosidl_message_type_support_t Output__rosidl_typesupport_introspection_c_
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_custom_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, Output)() {
-  Output__rosidl_typesupport_introspection_c__Output_message_member_array[0].members_ =
+  Output__rosidl_typesupport_introspection_c__Output_message_member_array[3].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, Bbox)();
   if (!Output__rosidl_typesupport_introspection_c__Output_message_type_support_handle.typesupport_identifier) {
     Output__rosidl_typesupport_introspection_c__Output_message_type_support_handle.typesupport_identifier =

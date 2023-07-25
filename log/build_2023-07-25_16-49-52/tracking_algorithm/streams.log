@@ -1,0 +1,51 @@
+[0.034s] Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[0.080s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.117s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.290s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.324s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.326s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.437s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.477s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.590s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[0.689s] -- Found custom_msgs: 0.0.0 (/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake)
+[0.718s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.801s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.803s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.803s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/tracking_algorithm/include
+[0.803s] -- Configured cppcheck exclude dirs and/or files: 
+[0.804s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.804s] -- Configured cpplint exclude dirs and/or files: 
+[0.804s] -- Added test 'lint_cmake' to check CMake code style
+[0.805s] -- Added test 'uncrustify' to check C / C++ code style
+[0.805s] -- Configured uncrustify additional arguments: 
+[0.806s] -- Added test 'xmllint' to check XML markup files
+[0.808s] -- Configuring done
+[0.822s] -- Generating done
+[0.823s] -- Build files have been written to: /home/bev/bev_ws/build/tracking_algorithm
+[0.867s] [35m[1mScanning dependencies of target sort_ros[0m
+[0.934s] [ 12%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/main.cpp.o[0m
+[0.934s] [ 25%] [32mBuilding CXX object CMakeFiles/sort_ros.dir/src/SortRos.cpp.o[0m
+[6.105s] [ 37%] [32m[1mLinking CXX executable sort_ros[0m
+[6.438s] [100%] Built target sort_ros
+[6.458s] Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[6.545s] Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm
+[6.562s] -- Install configuration: ""
+[6.562s] -- Installing: /home/bev/bev_ws/install/tracking_algorithm/lib/tracking_algorithm/sort_ros
+[6.566s] -- Set runtime path of "/home/bev/bev_ws/install/tracking_algorithm/lib/tracking_algorithm/sort_ros" to ""
+[6.566s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/package_run_dependencies/tracking_algorithm
+[6.567s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/parent_prefix_path/tracking_algorithm
+[6.567s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/ament_prefix_path.sh
+[6.567s] -- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/ament_prefix_path.dsv
+[6.567s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/path.sh
+[6.567s] -- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/environment/path.dsv
+[6.568s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.bash
+[6.568s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.sh
+[6.568s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.zsh
+[6.568s] -- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/local_setup.dsv
+[6.568s] -- Installing: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv
+[6.568s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/ament_index/resource_index/packages/tracking_algorithm
+[6.568s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/cmake/tracking_algorithmConfig.cmake
+[6.569s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/cmake/tracking_algorithmConfig-version.cmake
+[6.569s] -- Up-to-date: /home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.xml
+[6.576s] Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm

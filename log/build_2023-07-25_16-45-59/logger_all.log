@@ -1,0 +1,285 @@
+[0.303s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.303s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4aacc5e2e0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=28, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4aacc5e2e0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4aacc5e820>)
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.367s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bev/bev_ws'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.392s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_pkg' with type 'ros.ament_cmake' and name 'data_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ros'
+[0.394s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tracking_algorithm' with type 'ros.ament_cmake' and name 'tracking_algorithm'
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.415s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/bev/bev_ws/install
+[0.418s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 257 installed packages in /opt/ros/foxy
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/bev/bev_ws/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'data_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/data_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/data_pkg', 'merge_install': False, 'path': '/home/bev/bev_ws/src/data_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_target' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_clean_first' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_force_configure' from command line to 'False'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'ament_cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.511s] DEBUG:colcon.colcon_core.verb:Building package 'tracking_algorithm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/tracking_algorithm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/tracking_algorithm', 'merge_install': False, 'path': '/home/bev/bev_ws/src/tracking_algorithm', 'symlink_install': False, 'test_result_base': None}
+[0.512s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.514s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.515s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.515s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/custom_msgs'
+[0.518s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.518s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/custom_msgs -- -j28 -l28
+[4.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/custom_msgs -- -j28 -l28
+[4.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/custom_msgs
+[4.949s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[4.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/custom_msgs
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake module files
+[4.961s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake config files
+[4.962s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[4.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[4.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[4.967s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib'
+[4.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[4.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[4.971s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages'
+[4.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[4.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[4.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[4.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[4.974s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[4.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[4.976s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[4.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[4.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[4.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.173s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake module files
+[5.175s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake config files
+[5.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.183s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib'
+[5.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.188s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[5.188s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.189s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages'
+[5.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[5.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[5.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[5.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[5.192s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[5.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.196s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[5.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[5.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/data_pkg' with build type 'ament_cmake'
+[5.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/data_pkg'
+[5.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/tracking_algorithm' with build type 'ament_cmake'
+[5.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/tracking_algorithm'
+[5.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[5.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[10.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[10.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[10.664s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_pkg)
+[10.669s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake module files
+[10.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[10.671s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake config files
+[10.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_pkg', 'cmake_prefix_path')
+[10.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.ps1'
+[10.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.dsv'
+[10.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.sh'
+[10.678s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib'
+[10.678s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[10.678s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/pkgconfig/data_pkg.pc'
+[10.679s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/python3.8/site-packages'
+[10.679s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[10.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.ps1'
+[10.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv'
+[10.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.sh'
+[10.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.bash'
+[10.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.zsh'
+[10.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/data_pkg/share/colcon-core/packages/data_pkg)
+[10.743s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_pkg)
+[10.749s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake module files
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake config files
+[10.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_pkg', 'cmake_prefix_path')
+[10.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.ps1'
+[10.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.dsv'
+[10.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.sh'
+[10.755s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib'
+[10.756s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[10.756s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/pkgconfig/data_pkg.pc'
+[10.756s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/python3.8/site-packages'
+[10.756s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[10.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.ps1'
+[10.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv'
+[10.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.sh'
+[10.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.bash'
+[10.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.zsh'
+[10.762s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/data_pkg/share/colcon-core/packages/data_pkg)
+[11.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[11.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm
+[11.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracking_algorithm)
+[11.833s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake module files
+[11.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm
+[11.835s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake config files
+[11.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracking_algorithm', 'cmake_prefix_path')
+[11.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.ps1'
+[11.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.dsv'
+[11.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.sh'
+[11.842s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib'
+[11.842s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[11.842s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/pkgconfig/tracking_algorithm.pc'
+[11.843s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/python3.8/site-packages'
+[11.843s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[11.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.ps1'
+[11.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv'
+[11.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.sh'
+[11.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.bash'
+[11.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.zsh'
+[11.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tracking_algorithm/share/colcon-core/packages/tracking_algorithm)
+[11.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracking_algorithm)
+[11.941s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake module files
+[11.942s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake config files
+[11.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracking_algorithm', 'cmake_prefix_path')
+[11.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.ps1'
+[11.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.dsv'
+[11.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.sh'
+[11.948s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib'
+[11.948s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[11.948s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/pkgconfig/tracking_algorithm.pc'
+[11.948s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/python3.8/site-packages'
+[11.949s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[11.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.ps1'
+[11.952s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv'
+[11.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.sh'
+[11.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.bash'
+[11.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.zsh'
+[11.954s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tracking_algorithm/share/colcon-core/packages/tracking_algorithm)
+[11.954s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.955s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.963s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.988s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.992s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.ps1'
+[11.995s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bev/bev_ws/install/_local_setup_util_ps1.py'
+[11.998s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.ps1'
+[12.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.sh'
+[12.003s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bev/bev_ws/install/_local_setup_util_sh.py'
+[12.004s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.sh'
+[12.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.bash'
+[12.005s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.bash'
+[12.007s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.zsh'
+[12.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.zsh'

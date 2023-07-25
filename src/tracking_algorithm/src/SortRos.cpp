@@ -177,6 +177,7 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
 
     track.score = rect.score;
     track.label = track.label;
+    track.id = rect.id;
 
     track_output.outputs.push_back(track);
   }

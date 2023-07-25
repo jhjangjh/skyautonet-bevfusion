@@ -7,11 +7,13 @@
 module custom_msgs {
   module msg {
     struct Output {
-      custom_msgs::msg::Bbox box;
+      int64 id;
 
       double score;
 
       int64 label;
+
+      custom_msgs::msg::Bbox box;
     };
   };
 };

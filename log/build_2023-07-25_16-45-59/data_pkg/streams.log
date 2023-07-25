@@ -1,0 +1,53 @@
+[0.019s] Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.062s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.097s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.302s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.360s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.534s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.649s] -- Found custom_msgs: 0.0.0 (/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake)
+[0.676s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.751s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.752s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.752s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/data_pkg/include
+[0.753s] -- Configured cppcheck exclude dirs and/or files: 
+[0.753s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.753s] -- Configured cpplint exclude dirs and/or files: 
+[0.754s] -- Added test 'lint_cmake' to check CMake code style
+[0.755s] -- Added test 'uncrustify' to check C / C++ code style
+[0.755s] -- Configured uncrustify additional arguments: 
+[0.755s] -- Added test 'xmllint' to check XML markup files
+[0.757s] -- Configuring done
+[0.763s] -- Generating done
+[0.764s] -- Build files have been written to: /home/bev/bev_ws/build/data_pkg
+[0.810s] [35m[1mScanning dependencies of target data_collection[0m
+[0.853s] [ 50%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[1.956s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:[m[K In member function ‘[01m[Kvoid Data::Parse()[m[K’:
+[1.956s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:174:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<custom_msgs::msg::Output_<std::allocator<void> >, std::allocator<custom_msgs::msg::Output_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[1.956s]   174 |       for(int i=0;[01;35m[Ki<bev_output->outputs.size()[m[K;i++)
+[1.957s]       |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.127s] [100%] [32m[1mLinking CXX executable data_collection[0m
+[5.360s] [100%] Built target data_collection
+[5.378s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[5.437s] Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[5.453s] -- Install configuration: ""
+[5.453s] -- Installing: /home/bev/bev_ws/install/data_pkg/lib/data_pkg/data_collection
+[5.456s] -- Set runtime path of "/home/bev/bev_ws/install/data_pkg/lib/data_pkg/data_collection" to ""
+[5.457s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/package_run_dependencies/data_pkg
+[5.457s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/parent_prefix_path/data_pkg
+[5.457s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/ament_prefix_path.sh
+[5.457s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/ament_prefix_path.dsv
+[5.458s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/path.sh
+[5.458s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/path.dsv
+[5.458s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.bash
+[5.459s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.sh
+[5.459s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.zsh
+[5.459s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.dsv
+[5.459s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv
+[5.459s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/packages/data_pkg
+[5.459s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/cmake/data_pkgConfig.cmake
+[5.460s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/cmake/data_pkgConfig-version.cmake
+[5.460s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/package.xml
+[5.467s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg

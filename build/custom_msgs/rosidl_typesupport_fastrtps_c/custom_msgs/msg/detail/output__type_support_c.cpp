@@ -60,6 +60,21 @@ static bool _Output__cdr_serialize(
     return false;
   }
   const _Output__ros_msg_type * ros_message = static_cast<const _Output__ros_msg_type *>(untyped_ros_message);
+  // Field name: id
+  {
+    cdr << ros_message->id;
+  }
+
+  // Field name: score
+  {
+    cdr << ros_message->score;
+  }
+
+  // Field name: label
+  {
+    cdr << ros_message->label;
+  }
+
   // Field name: box
   {
     const message_type_support_callbacks_t * callbacks =
@@ -74,16 +89,6 @@ static bool _Output__cdr_serialize(
     }
   }
 
-  // Field name: score
-  {
-    cdr << ros_message->score;
-  }
-
-  // Field name: label
-  {
-    cdr << ros_message->label;
-  }
-
   return true;
 }
 
@@ -96,6 +101,21 @@ static bool _Output__cdr_deserialize(
     return false;
   }
   _Output__ros_msg_type * ros_message = static_cast<_Output__ros_msg_type *>(untyped_ros_message);
+  // Field name: id
+  {
+    cdr >> ros_message->id;
+  }
+
+  // Field name: score
+  {
+    cdr >> ros_message->score;
+  }
+
+  // Field name: label
+  {
+    cdr >> ros_message->label;
+  }
+
   // Field name: box
   {
     const message_type_support_callbacks_t * callbacks =
@@ -108,16 +128,6 @@ static bool _Output__cdr_deserialize(
     {
       return false;
     }
-  }
-
-  // Field name: score
-  {
-    cdr >> ros_message->score;
-  }
-
-  // Field name: label
-  {
-    cdr >> ros_message->label;
   }
 
   return true;
@@ -137,10 +147,12 @@ size_t get_serialized_size_custom_msgs__msg__Output(
   (void)padding;
   (void)wchar_size;
 
-  // field.name box
-
-  current_alignment += get_serialized_size_custom_msgs__msg__Bbox(
-    &(ros_message->box), current_alignment);
+  // field.name id
+  {
+    size_t item_size = sizeof(ros_message->id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name score
   {
     size_t item_size = sizeof(ros_message->score);
@@ -153,6 +165,10 @@ size_t get_serialized_size_custom_msgs__msg__Output(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name box
+
+  current_alignment += get_serialized_size_custom_msgs__msg__Bbox(
+    &(ros_message->box), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -177,16 +193,12 @@ size_t max_serialized_size_custom_msgs__msg__Output(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: box
+  // member: id
   {
     size_t array_size = 1;
 
-
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment +=
-        max_serialized_size_custom_msgs__msg__Bbox(
-        full_bounded, current_alignment);
-    }
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: score
   {
@@ -201,6 +213,17 @@ size_t max_serialized_size_custom_msgs__msg__Output(
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: box
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_custom_msgs__msg__Bbox(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

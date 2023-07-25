@@ -1,0 +1,29 @@
+[0.035s] Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.100s] [35m[1mScanning dependencies of target data_collection[0m
+[0.134s] [ 50%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[0.252s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:13:32:[m[K [01;31m[Kerror: [m[Kmacro "RCLCPP_INFO_STREAM" requires 2 arguments, but only 1 given
+[0.253s]    13 |   RCLCPP_INFO_STREAM("Callback"[01;31m[K)[m[K;
+[0.253s]       |                                [01;31m[K^[m[K
+[0.253s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[0.253s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[0.253s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.253s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.255s]                  from [01m[K/home/bev/bev_ws/src/data_pkg/include/data_collection.hpp:8[m[K,
+[0.255s]                  from [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:1[m[K:
+[0.255s] [01m[K/opt/ros/foxy/include/rclcpp/logging.hpp:736:[m[K [01;36m[Knote: [m[Kmacro "RCLCPP_INFO_STREAM" defined here
+[0.255s]   736 | #define RCLCPP_INFO_STREAM(logger, stream_arg) \
+[0.255s]       | 
+[1.198s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:[m[K In member function ‘[01m[Kvoid Data::bevCallback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.199s] [01m[K/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp:13:3:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO_STREAM[m[K’ was not declared in this scope
+[1.199s]    13 |   [01;31m[KRCLCPP_INFO_STREAM[m[K("Callback");
+[1.199s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.470s] make[2]: *** [CMakeFiles/data_collection.dir/build.make:63: CMakeFiles/data_collection.dir/src/data_collection.cpp.o] Error 1
+[2.470s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+[2.470s] make: *** [Makefile:141: all] Error 2
+[2.474s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '2': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/data_pkg:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28

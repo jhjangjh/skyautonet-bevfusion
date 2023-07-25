@@ -39,8 +39,10 @@ private:
 
   rclcpp::Subscription<OutputArray>::SharedPtr bev_sub_;
 
+  vector<Output> output_vec;
+
   // for data parse
-  OutputArray bev_output; 
+  OutputArray::SharedPtr bev_output; 
   Document parse_doc;
 
   // for data collect

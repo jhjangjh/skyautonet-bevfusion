@@ -37,16 +37,16 @@ void Output_fini_function(void * message_memory)
   typed_message->~Output();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Output_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Output_message_member_array[4] = {
   {
-    "box",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    "id",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<custom_msgs::msg::Bbox>(),  // members of sub message
+    nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_msgs::msg::Output, box),  // bytes offset in struct
+    offsetof(custom_msgs::msg::Output, id),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -82,13 +82,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Output_messag
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "box",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<custom_msgs::msg::Bbox>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Output, box),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Output_message_members = {
   "custom_msgs::msg",  // message namespace
   "Output",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(custom_msgs::msg::Output),
   Output_message_member_array,  // message members
   Output_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -52,15 +52,13 @@ bool custom_msgs__msg__output__convert_from_py(PyObject * _pymsg, void * _ros_me
     assert(strncmp("custom_msgs.msg._output.Output", full_classname_dest, 30) == 0);
   }
   custom_msgs__msg__Output * ros_message = _ros_message;
-  {  // box
-    PyObject * field = PyObject_GetAttrString(_pymsg, "box");
+  {  // id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "id");
     if (!field) {
       return false;
     }
-    if (!custom_msgs__msg__bbox__convert_from_py(field, &ros_message->box)) {
-      Py_DECREF(field);
-      return false;
-    }
+    assert(PyLong_Check(field));
+    ros_message->id = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
   {  // score
@@ -79,6 +77,17 @@ bool custom_msgs__msg__output__convert_from_py(PyObject * _pymsg, void * _ros_me
     }
     assert(PyLong_Check(field));
     ros_message->label = PyLong_AsLongLong(field);
+    Py_DECREF(field);
+  }
+  {  // box
+    PyObject * field = PyObject_GetAttrString(_pymsg, "box");
+    if (!field) {
+      return false;
+    }
+    if (!custom_msgs__msg__bbox__convert_from_py(field, &ros_message->box)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
 
@@ -103,14 +112,11 @@ PyObject * custom_msgs__msg__output__convert_to_py(void * raw_ros_message)
     }
   }
   custom_msgs__msg__Output * ros_message = (custom_msgs__msg__Output *)raw_ros_message;
-  {  // box
+  {  // id
     PyObject * field = NULL;
-    field = custom_msgs__msg__bbox__convert_to_py(&ros_message->box);
-    if (!field) {
-      return NULL;
-    }
+    field = PyLong_FromLongLong(ros_message->id);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "box", field);
+      int rc = PyObject_SetAttrString(_pymessage, "id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -133,6 +139,20 @@ PyObject * custom_msgs__msg__output__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLongLong(ros_message->label);
     {
       int rc = PyObject_SetAttrString(_pymessage, "label", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // box
+    PyObject * field = NULL;
+    field = custom_msgs__msg__bbox__convert_to_py(&ros_message->box);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "box", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

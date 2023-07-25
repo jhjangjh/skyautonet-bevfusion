@@ -42,6 +42,7 @@ struct Output_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->id = 0ll;
       this->score = 0.0;
       this->label = 0ll;
     }
@@ -53,27 +54,31 @@ struct Output_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->id = 0ll;
       this->score = 0.0;
       this->label = 0ll;
     }
   }
 
   // field types and members
-  using _box_type =
-    custom_msgs::msg::Bbox_<ContainerAllocator>;
-  _box_type box;
+  using _id_type =
+    int64_t;
+  _id_type id;
   using _score_type =
     double;
   _score_type score;
   using _label_type =
     int64_t;
   _label_type label;
+  using _box_type =
+    custom_msgs::msg::Bbox_<ContainerAllocator>;
+  _box_type box;
 
   // setters for named parameter idiom
-  Type & set__box(
-    const custom_msgs::msg::Bbox_<ContainerAllocator> & _arg)
+  Type & set__id(
+    const int64_t & _arg)
   {
-    this->box = _arg;
+    this->id = _arg;
     return *this;
   }
   Type & set__score(
@@ -86,6 +91,12 @@ struct Output_
     const int64_t & _arg)
   {
     this->label = _arg;
+    return *this;
+  }
+  Type & set__box(
+    const custom_msgs::msg::Bbox_<ContainerAllocator> & _arg)
+  {
+    this->box = _arg;
     return *this;
   }
 
@@ -131,13 +142,16 @@ struct Output_
   // comparison operators
   bool operator==(const Output_ & other) const
   {
-    if (this->box != other.box) {
+    if (this->id != other.id) {
       return false;
     }
     if (this->score != other.score) {
       return false;
     }
     if (this->label != other.label) {
+      return false;
+    }
+    if (this->box != other.box) {
       return false;
     }
     return true;

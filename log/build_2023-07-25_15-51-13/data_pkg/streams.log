@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/bev/bev_ws/build/data_pkg': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.100s] [35m[1mScanning dependencies of target data_collection[0m
+[0.140s] [ 50%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[4.257s] [100%] [32m[1mLinking CXX executable data_collection[0m
+[4.497s] [100%] Built target data_collection
+[4.514s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[4.571s] Invoking command in '/home/bev/bev_ws/build/data_pkg': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[4.590s] -- Install configuration: ""
+[4.590s] -- Installing: /home/bev/bev_ws/install/data_pkg/lib/data_pkg/data_collection
+[4.594s] -- Set runtime path of "/home/bev/bev_ws/install/data_pkg/lib/data_pkg/data_collection" to ""
+[4.595s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/package_run_dependencies/data_pkg
+[4.595s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/parent_prefix_path/data_pkg
+[4.595s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/ament_prefix_path.sh
+[4.595s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/ament_prefix_path.dsv
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/path.sh
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/environment/path.dsv
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.bash
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.sh
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.zsh
+[4.596s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/local_setup.dsv
+[4.597s] -- Installing: /home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv
+[4.597s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/ament_index/resource_index/packages/data_pkg
+[4.597s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/cmake/data_pkgConfig.cmake
+[4.597s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/cmake/data_pkgConfig-version.cmake
+[4.597s] -- Up-to-date: /home/bev/bev_ws/install/data_pkg/share/data_pkg/package.xml
+[4.606s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg

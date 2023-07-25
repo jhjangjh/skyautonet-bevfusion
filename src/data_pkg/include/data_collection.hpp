@@ -29,18 +29,22 @@ public:
 
 private:
   void bevCallback(const OutputArray::SharedPtr msg);
-  void ReadExample();
+  void ReadParseFile();
   void Parse();
   void ReadCollectFile();
   void Collect();
 
   const char* collect_filePath = "/home/bev/bev_ws/src/data_pkg/collect.json";
+  const char* parse_filePath = "/home/bev/bev_ws/src/data_pkg/parse.json";
 
   rclcpp::Subscription<OutputArray>::SharedPtr bev_sub_;
 
+  // for data parse
   OutputArray bev_output; 
-  Document doc;
-  int id;
+  Document parse_doc;
+
+  // for data collect
+  int frame;
   Document collect_doc;
   
 };

@@ -1,0 +1,3 @@
+make[2]: *** No rule to make target '/home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp', needed by 'CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

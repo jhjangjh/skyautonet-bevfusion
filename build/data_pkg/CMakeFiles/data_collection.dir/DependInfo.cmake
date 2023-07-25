@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bev/bev_ws/src/data_pkg/src/data_collection.cpp" "/home/bev/bev_ws/build/data_pkg/CMakeFiles/data_collection.dir/src/data_collection.cpp.o"
-  "/home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp" "/home/bev/bev_ws/build/data_pkg/CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/bev/bev_ws/src/data_pkg/include"
+  "/home/bev/bev_ws/install/custom_msgs/include"
   "/opt/ros/foxy/include"
   )
 

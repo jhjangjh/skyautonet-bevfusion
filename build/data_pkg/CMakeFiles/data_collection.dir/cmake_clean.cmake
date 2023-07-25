@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/data_collection.dir/src/data_collection.cpp.o"
-  "CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o"
   "data_collection"
   "data_collection.pdb"
 )

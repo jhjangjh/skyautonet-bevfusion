@@ -1,0 +1,36 @@
+[0.033s] Invoking command in '/home/bev/bev_ws/build/data_pkg': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[0.070s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.101s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.296s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.323s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.325s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.435s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.476s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.585s] -- Found custom_msgs: 0.0.0 (/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake)
+[0.611s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.690s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.693s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.693s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/data_pkg/include
+[0.693s] -- Configured cppcheck exclude dirs and/or files: 
+[0.697s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.697s] -- Configured cpplint exclude dirs and/or files: 
+[0.699s] -- Added test 'lint_cmake' to check CMake code style
+[0.703s] -- Added test 'uncrustify' to check C / C++ code style
+[0.704s] -- Configured uncrustify additional arguments: 
+[0.704s] -- Added test 'xmllint' to check XML markup files
+[0.709s] -- Configuring done
+[0.721s] -- Generating done
+[0.722s] -- Build files have been written to: /home/bev/bev_ws/build/data_pkg
+[0.763s] [35m[1mScanning dependencies of target data_collection[0m
+[0.809s] [ 33%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/data_collection.cpp.o[0m
+[0.809s] [ 66%] [32mBuilding CXX object CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o[0m
+[0.826s] [01m[K/home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp:76:10:[m[K [01;31m[Kfatal error: [m[Kjson/json.h: No such file or directory
+[0.827s]    76 | #include [01;31m[K"json/json.h"[m[K
+[0.827s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.827s] compilation terminated.
+[0.828s] make[2]: *** [CMakeFiles/data_collection.dir/build.make:76: CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o] Error 1
+[0.828s] make[2]: *** Waiting for unfinished jobs....
+[4.828s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/data_collection.dir/all] Error 2
+[4.828s] make: *** [Makefile:141: all] Error 2
+[4.832s] Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '2': AMENT_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib PYTHONPATH=/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28

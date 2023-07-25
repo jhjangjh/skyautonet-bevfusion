@@ -23,7 +23,7 @@ find_package(custom_msgs REQUIRED)
 
 include_directories(include)
 
-add_executable(data_collection src/data_collection.cpp src/jsoncpp.cpp)
+add_executable(data_collection src/data_collection.cpp)
 ament_target_dependencies(data_collection
 rclcpp
 std_msgs

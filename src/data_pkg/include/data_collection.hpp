@@ -25,16 +25,22 @@ class Data : public rclcpp::Node
 {
 public:
   Data();
+  void Run();
 
 private:
   void bevCallback(const OutputArray::SharedPtr msg);
   void ReadExample();
   void Parse();
+  void ReadCollectFile();
   void Collect();
+
+  const char* collect_filePath = "/home/bev/bev_ws/src/data_pkg/collect.json";
 
   rclcpp::Subscription<OutputArray>::SharedPtr bev_sub_;
 
   OutputArray bev_output; 
   Document doc;
+  int id;
+  Document collect_doc;
   
 };

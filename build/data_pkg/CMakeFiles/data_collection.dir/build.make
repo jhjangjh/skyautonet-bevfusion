@@ -70,42 +70,26 @@ CMakeFiles/data_collection.dir/src/data_collection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection.dir/src/data_collection.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bev/bev_ws/src/data_pkg/src/data_collection.cpp -o CMakeFiles/data_collection.dir/src/data_collection.cpp.s
 
-CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o: CMakeFiles/data_collection.dir/flags.make
-CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o: /home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bev/bev_ws/build/data_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o -c /home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp
-
-CMakeFiles/data_collection.dir/src/jsoncpp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection.dir/src/jsoncpp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp > CMakeFiles/data_collection.dir/src/jsoncpp.cpp.i
-
-CMakeFiles/data_collection.dir/src/jsoncpp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection.dir/src/jsoncpp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bev/bev_ws/src/data_pkg/src/jsoncpp.cpp -o CMakeFiles/data_collection.dir/src/jsoncpp.cpp.s
-
 # Object files for target data_collection
 data_collection_OBJECTS = \
-"CMakeFiles/data_collection.dir/src/data_collection.cpp.o" \
-"CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o"
+"CMakeFiles/data_collection.dir/src/data_collection.cpp.o"
 
 # External object files for target data_collection
 data_collection_EXTERNAL_OBJECTS =
 
 data_collection: CMakeFiles/data_collection.dir/src/data_collection.cpp.o
-data_collection: CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o
 data_collection: CMakeFiles/data_collection.dir/build.make
 data_collection: /opt/ros/foxy/lib/librclcpp.so
+data_collection: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+data_collection: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+data_collection: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+data_collection: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 data_collection: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 data_collection: /opt/ros/foxy/lib/librcl.so
 data_collection: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 data_collection: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
@@ -128,6 +112,13 @@ data_collection: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_generator_c.so
 data_collection: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 data_collection: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 data_collection: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+data_collection: /opt/ros/foxy/lib/libtracetools.so
+data_collection: /home/bev/bev_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+data_collection: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 data_collection: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 data_collection: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 data_collection: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -140,9 +131,8 @@ data_collection: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 data_collection: /opt/ros/foxy/lib/librcpputils.so
 data_collection: /opt/ros/foxy/lib/librosidl_runtime_c.so
 data_collection: /opt/ros/foxy/lib/librcutils.so
-data_collection: /opt/ros/foxy/lib/libtracetools.so
 data_collection: CMakeFiles/data_collection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bev/bev_ws/build/data_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable data_collection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bev/bev_ws/build/data_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable data_collection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_collection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

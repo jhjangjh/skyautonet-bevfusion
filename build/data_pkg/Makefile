@@ -233,33 +233,6 @@ src/data_collection.cpp.s:
 	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/data_collection.cpp.s
 .PHONY : src/data_collection.cpp.s
 
-src/jsoncpp.o: src/jsoncpp.cpp.o
-
-.PHONY : src/jsoncpp.o
-
-# target to build an object file
-src/jsoncpp.cpp.o:
-	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.o
-.PHONY : src/jsoncpp.cpp.o
-
-src/jsoncpp.i: src/jsoncpp.cpp.i
-
-.PHONY : src/jsoncpp.i
-
-# target to preprocess a source file
-src/jsoncpp.cpp.i:
-	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.i
-.PHONY : src/jsoncpp.cpp.i
-
-src/jsoncpp.s: src/jsoncpp.cpp.s
-
-.PHONY : src/jsoncpp.s
-
-# target to generate assembly for a file
-src/jsoncpp.cpp.s:
-	$(MAKE) -f CMakeFiles/data_collection.dir/build.make CMakeFiles/data_collection.dir/src/jsoncpp.cpp.s
-.PHONY : src/jsoncpp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -279,9 +252,6 @@ help:
 	@echo "... src/data_collection.o"
 	@echo "... src/data_collection.i"
 	@echo "... src/data_collection.s"
-	@echo "... src/jsoncpp.o"
-	@echo "... src/jsoncpp.i"
-	@echo "... src/jsoncpp.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 {
-    "frame": 2892,
+    "frame": 46,
     "ego_vehicle": {
         "latitude": 0,
         "longitude": 0,
@@ -14,66 +14,5 @@
         "speed_limit": 0,
         "traffic_light": 0
     },
-    "objects": [
-        {
-            "id": 5,
-            "type": 0,
-            "score": 5.608116149902344,
-            "pos_x": 4.137256145477295,
-            "pos_y": 1.575148105621338,
-            "width": 2.8675143718719482,
-            "length": 0.8094923496246338,
-            "height": 0.0,
-            "yaw": 0.0,
-            "vel_x": 0,
-            "vel_y": 0,
-            "relative_speed": 0,
-            "ttc": 0
-        },
-        {
-            "id": 29,
-            "type": 0,
-            "score": 14.538497924804688,
-            "pos_x": 4.435353755950928,
-            "pos_y": 1.7136220932006836,
-            "width": 3.0479884147644043,
-            "length": 0.7968840599060059,
-            "height": 0.0,
-            "yaw": 0.0,
-            "vel_x": 0,
-            "vel_y": 0,
-            "relative_speed": 0,
-            "ttc": 0
-        },
-        {
-            "id": 33,
-            "type": 0,
-            "score": -11.168472290039063,
-            "pos_x": 4.8480401039123535,
-            "pos_y": 1.718885898590088,
-            "width": 0.0,
-            "length": 0.0,
-            "height": 0.0,
-            "yaw": 0.0,
-            "vel_x": 0,
-            "vel_y": 0,
-            "relative_speed": 0,
-            "ttc": 0
-        },
-        {
-            "id": 34,
-            "type": 0,
-            "score": 20.765243530273438,
-            "pos_x": 4.561464786529541,
-            "pos_y": 1.7569035291671753,
-            "width": 0.0,
-            "length": 0.0,
-            "height": 0.0,
-            "yaw": 0.0,
-            "vel_x": 0,
-            "vel_y": 0,
-            "relative_speed": 0,
-            "ttc": 0
-        }
-    ]
+    "objects": []
 }

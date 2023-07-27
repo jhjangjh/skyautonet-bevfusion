@@ -26,6 +26,8 @@ typedef struct custom_msgs__msg__Bbox
   double length;
   double height;
   double yaw;
+  double vel_x;
+  double vel_y;
 } custom_msgs__msg__Bbox;
 
 // Struct for a sequence of custom_msgs__msg__Bbox.

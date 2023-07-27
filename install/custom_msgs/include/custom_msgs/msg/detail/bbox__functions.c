@@ -23,6 +23,8 @@ custom_msgs__msg__Bbox__init(custom_msgs__msg__Bbox * msg)
   // length
   // height
   // yaw
+  // vel_x
+  // vel_y
   return true;
 }
 
@@ -38,6 +40,8 @@ custom_msgs__msg__Bbox__fini(custom_msgs__msg__Bbox * msg)
   // length
   // height
   // yaw
+  // vel_x
+  // vel_y
 }
 
 bool
@@ -70,6 +74,14 @@ custom_msgs__msg__Bbox__are_equal(const custom_msgs__msg__Bbox * lhs, const cust
   if (lhs->yaw != rhs->yaw) {
     return false;
   }
+  // vel_x
+  if (lhs->vel_x != rhs->vel_x) {
+    return false;
+  }
+  // vel_y
+  if (lhs->vel_y != rhs->vel_y) {
+    return false;
+  }
   return true;
 }
 
@@ -93,6 +105,10 @@ custom_msgs__msg__Bbox__copy(
   output->height = input->height;
   // yaw
   output->yaw = input->yaw;
+  // vel_x
+  output->vel_x = input->vel_x;
+  // vel_y
+  output->vel_y = input->vel_y;
   return true;
 }
 

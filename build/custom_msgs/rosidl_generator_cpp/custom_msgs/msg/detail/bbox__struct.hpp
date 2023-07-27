@@ -43,6 +43,8 @@ struct Bbox_
       this->length = 0.0;
       this->height = 0.0;
       this->yaw = 0.0;
+      this->vel_x = 0.0;
+      this->vel_y = 0.0;
     }
   }
 
@@ -58,6 +60,8 @@ struct Bbox_
       this->length = 0.0;
       this->height = 0.0;
       this->yaw = 0.0;
+      this->vel_x = 0.0;
+      this->vel_y = 0.0;
     }
   }
 
@@ -80,6 +84,12 @@ struct Bbox_
   using _yaw_type =
     double;
   _yaw_type yaw;
+  using _vel_x_type =
+    double;
+  _vel_x_type vel_x;
+  using _vel_y_type =
+    double;
+  _vel_y_type vel_y;
 
   // setters for named parameter idiom
   Type & set__pos_x(
@@ -116,6 +126,18 @@ struct Bbox_
     const double & _arg)
   {
     this->yaw = _arg;
+    return *this;
+  }
+  Type & set__vel_x(
+    const double & _arg)
+  {
+    this->vel_x = _arg;
+    return *this;
+  }
+  Type & set__vel_y(
+    const double & _arg)
+  {
+    this->vel_y = _arg;
     return *this;
   }
 
@@ -177,6 +199,12 @@ struct Bbox_
       return false;
     }
     if (this->yaw != other.yaw) {
+      return false;
+    }
+    if (this->vel_x != other.vel_x) {
+      return false;
+    }
+    if (this->vel_y != other.vel_y) {
       return false;
     }
     return true;

@@ -79,6 +79,16 @@ static bool _Bbox__cdr_serialize(
     cdr << ros_message->yaw;
   }
 
+  // Field name: vel_x
+  {
+    cdr << ros_message->vel_x;
+  }
+
+  // Field name: vel_y
+  {
+    cdr << ros_message->vel_y;
+  }
+
   return true;
 }
 
@@ -119,6 +129,16 @@ static bool _Bbox__cdr_deserialize(
   // Field name: yaw
   {
     cdr >> ros_message->yaw;
+  }
+
+  // Field name: vel_x
+  {
+    cdr >> ros_message->vel_x;
+  }
+
+  // Field name: vel_y
+  {
+    cdr >> ros_message->vel_y;
   }
 
   return true;
@@ -171,6 +191,18 @@ size_t get_serialized_size_custom_msgs__msg__Bbox(
   // field.name yaw
   {
     size_t item_size = sizeof(ros_message->yaw);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name vel_x
+  {
+    size_t item_size = sizeof(ros_message->vel_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name vel_y
+  {
+    size_t item_size = sizeof(ros_message->vel_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -234,6 +266,20 @@ size_t max_serialized_size_custom_msgs__msg__Bbox(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: yaw
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: vel_x
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: vel_y
   {
     size_t array_size = 1;
 

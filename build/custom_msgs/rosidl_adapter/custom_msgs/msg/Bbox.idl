@@ -17,6 +17,10 @@ module custom_msgs {
       double height;
 
       double yaw;
+
+      double vel_x;
+
+      double vel_y;
     };
   };
 };

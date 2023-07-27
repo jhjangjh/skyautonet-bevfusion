@@ -104,6 +104,24 @@ bool custom_msgs__msg__bbox__convert_from_py(PyObject * _pymsg, void * _ros_mess
     ros_message->yaw = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // vel_x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vel_x");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->vel_x = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // vel_y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vel_y");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->vel_y = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -186,6 +204,28 @@ PyObject * custom_msgs__msg__bbox__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->yaw);
     {
       int rc = PyObject_SetAttrString(_pymessage, "yaw", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // vel_x
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->vel_x);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "vel_x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // vel_y
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->vel_y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "vel_y", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

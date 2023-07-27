@@ -20,16 +20,48 @@ namespace msg
 namespace builder
 {
 
+class Init_Bbox_vel_y
+{
+public:
+  explicit Init_Bbox_vel_y(::custom_msgs::msg::Bbox & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::msg::Bbox vel_y(::custom_msgs::msg::Bbox::_vel_y_type arg)
+  {
+    msg_.vel_y = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Bbox msg_;
+};
+
+class Init_Bbox_vel_x
+{
+public:
+  explicit Init_Bbox_vel_x(::custom_msgs::msg::Bbox & msg)
+  : msg_(msg)
+  {}
+  Init_Bbox_vel_y vel_x(::custom_msgs::msg::Bbox::_vel_x_type arg)
+  {
+    msg_.vel_x = std::move(arg);
+    return Init_Bbox_vel_y(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Bbox msg_;
+};
+
 class Init_Bbox_yaw
 {
 public:
   explicit Init_Bbox_yaw(::custom_msgs::msg::Bbox & msg)
   : msg_(msg)
   {}
-  ::custom_msgs::msg::Bbox yaw(::custom_msgs::msg::Bbox::_yaw_type arg)
+  Init_Bbox_vel_x yaw(::custom_msgs::msg::Bbox::_yaw_type arg)
   {
     msg_.yaw = std::move(arg);
-    return std::move(msg_);
+    return Init_Bbox_vel_x(msg_);
   }
 
 private:

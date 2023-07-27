@@ -59,6 +59,8 @@ class Bbox(metaclass=Metaclass_Bbox):
         '_length',
         '_height',
         '_yaw',
+        '_vel_x',
+        '_vel_y',
     ]
 
     _fields_and_field_types = {
@@ -68,9 +70,13 @@ class Bbox(metaclass=Metaclass_Bbox):
         'length': 'double',
         'height': 'double',
         'yaw': 'double',
+        'vel_x': 'double',
+        'vel_y': 'double',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -89,6 +95,8 @@ class Bbox(metaclass=Metaclass_Bbox):
         self.length = kwargs.get('length', float())
         self.height = kwargs.get('height', float())
         self.yaw = kwargs.get('yaw', float())
+        self.vel_x = kwargs.get('vel_x', float())
+        self.vel_y = kwargs.get('vel_y', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -130,6 +138,10 @@ class Bbox(metaclass=Metaclass_Bbox):
         if self.height != other.height:
             return False
         if self.yaw != other.yaw:
+            return False
+        if self.vel_x != other.vel_x:
+            return False
+        if self.vel_y != other.vel_y:
             return False
         return True
 
@@ -215,3 +227,29 @@ class Bbox(metaclass=Metaclass_Bbox):
                 isinstance(value, float), \
                 "The 'yaw' field must be of type 'float'"
         self._yaw = value
+
+    @property
+    def vel_x(self):
+        """Message field 'vel_x'."""
+        return self._vel_x
+
+    @vel_x.setter
+    def vel_x(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vel_x' field must be of type 'float'"
+        self._vel_x = value
+
+    @property
+    def vel_y(self):
+        """Message field 'vel_y'."""
+        return self._vel_y
+
+    @vel_y.setter
+    def vel_y(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vel_y' field must be of type 'float'"
+        self._vel_y = value

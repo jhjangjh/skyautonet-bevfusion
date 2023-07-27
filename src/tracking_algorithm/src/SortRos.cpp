@@ -64,6 +64,8 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
   }
 
   std::vector<SortRect> output = sorter->update(rects);
+  now_timestamp = outputArray->header.stamp;
+  
   
   MarkerArray markerArrayOutput;
 
@@ -168,12 +170,16 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
   for (auto rect : output) {
     custom_msgs::msg::Output track;
 
+    getVelocity(rect);
+
     track.box.pos_x = rect.centerX;
     track.box.pos_y = rect.centerY;
     track.box.width = rect.width;
     track.box.length = rect.length;
     track.box.height = rect.height;
     track.box.yaw = rect.yaw;
+    track.box.vel_x = vel_x;
+    track.box.vel_y = vel_y;
 
     track.score = rect.score;
     track.label = track.label;
@@ -189,4 +195,32 @@ void SortRos::rectArrayCallback(const custom_msgs::msg::OutputArray::SharedPtr o
 
   std::chrono::duration<double>sec = std::chrono::system_clock::now() - start;
   std::cout << "Tracking 알고리즘 수행시간(초) : " << sec.count() <<"sec"<< std::endl;
+
+  pre_output = output;
+  pre_timestamp = now_timestamp;
+}
+
+void SortRos::getVelocity(SortRect rect)
+{
+  float displacement_x;
+  float displacement_y;
+  
+  for(auto pre_rect : pre_output)
+  {
+    if(rect.id == pre_rect.id)
+    {
+      displacement_x = rect.centerX - pre_rect.centerX;
+      displacement_y = rect.centerY - pre_rect.centerY;
+
+      break;
+    }
+  }
+
+  rclcpp::Duration timegap = now_timestamp - pre_timestamp;
+
+  // std::cout << "timegap(sec) : " <<  timegap.seconds() << std::endl;
+  // std::cout << "timegap(nanosec) : " <<  timegap.nanoseconds() << std::endl;
+
+  vel_x = displacement_x / timegap.seconds();
+  vel_y = displacement_y / timegap.seconds();
 }

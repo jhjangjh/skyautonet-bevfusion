@@ -31,7 +31,7 @@ void Bbox__rosidl_typesupport_introspection_c__Bbox_fini_function(void * message
   custom_msgs__msg__Bbox__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Bbox__rosidl_typesupport_introspection_c__Bbox_message_member_array[6] = {
+static rosidl_typesupport_introspection_c__MessageMember Bbox__rosidl_typesupport_introspection_c__Bbox_message_member_array[8] = {
   {
     "pos_x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -121,13 +121,43 @@ static rosidl_typesupport_introspection_c__MessageMember Bbox__rosidl_typesuppor
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "vel_x",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Bbox, vel_x),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "vel_y",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Bbox, vel_y),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers Bbox__rosidl_typesupport_introspection_c__Bbox_message_members = {
   "custom_msgs__msg",  // message namespace
   "Bbox",  // message name
-  6,  // number of fields
+  8,  // number of fields
   sizeof(custom_msgs__msg__Bbox),
   Bbox__rosidl_typesupport_introspection_c__Bbox_message_member_array,  // message members
   Bbox__rosidl_typesupport_introspection_c__Bbox_init_function,  // function to initialize message memory (memory has to be allocated)

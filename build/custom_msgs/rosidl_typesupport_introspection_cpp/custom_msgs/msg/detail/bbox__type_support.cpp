@@ -37,7 +37,7 @@ void Bbox_fini_function(void * message_memory)
   typed_message->~Bbox();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Bbox_message_member_array[6] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Bbox_message_member_array[8] = {
   {
     "pos_x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -127,13 +127,43 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Bbox_message_
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "vel_x",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Bbox, vel_x),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "vel_y",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Bbox, vel_y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Bbox_message_members = {
   "custom_msgs::msg",  // message namespace
   "Bbox",  // message name
-  6,  // number of fields
+  8,  // number of fields
   sizeof(custom_msgs::msg::Bbox),
   Bbox_message_member_array,  // message members
   Bbox_init_function,  // function to initialize message memory (memory has to be allocated)

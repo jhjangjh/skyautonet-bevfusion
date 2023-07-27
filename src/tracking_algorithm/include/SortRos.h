@@ -27,10 +27,15 @@ private:
 
   Sort* sorter;
 
-  // int param_maxAge;
-  // int param_minHits;
-  // double param_iouThreshold;
-  
+  std::vector<SortRect> pre_output;
+  rclcpp::Time pre_timestamp;
+  rclcpp::Time now_timestamp;
+
+
+  void getVelocity(SortRect rect);
+
+  float vel_x;
+  float vel_y;
   
 };
 

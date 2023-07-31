@@ -1,0 +1,10 @@
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:15:23:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kvirtual TCPServer::~TCPServer()[m[K’
+   15 | TCPServer::~TCPServer([01;31m[K)[m[K {
+      |                       [01;31m[K^[m[K
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::callback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:73:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   73 | void TCPServer::callback([01;35m[Kconst OutputArray::SharedPtr msg[m[K)
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/tcp_socket.dir/build.make:63: CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/tcp_socket.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

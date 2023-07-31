@@ -1,0 +1,217 @@
+[0.031s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.104s] [35m[1mScanning dependencies of target tcp_socket[0m
+[0.149s] [ 50%] [32mBuilding CXX object CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o[0m
+[1.171s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::callback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.172s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:69:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.173s]    69 | void TCPServer::callback([01;35m[Kconst OutputArray::SharedPtr msg[m[K)
+[1.175s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.177s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.178s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.178s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.178s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.179s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.179s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.180s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.181s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.182s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.182s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.182s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::error_handling(std::string)[m[K’:
+[1.182s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:42:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kconst char [18][m[K’ and ‘[01m[Krclcpp::Logger[m[K’)
+[1.183s]    80 |   RCLCPP_WARN_STREAM([01;31m[K"error_handling : " << this->get_logger()[m[K, message);
+[1.184s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.184s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:34[m[K,
+[1.188s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.189s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.189s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.190s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.191s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.191s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::FutureReturnCode&)[m[K’
+[1.191s]    38 | [01;36m[Koperator[m[K<<(std::ostream & os, const FutureReturnCode & future_return_code);
+[1.191s]       | [01;36m[K^~~~~~~~[m[K
+[1.192s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.192s]    38 | operator<<([01;36m[Kstd::ostream & os[m[K, const FutureReturnCode & future_return_code);
+[1.192s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.192s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:26[m[K,
+[1.193s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.193s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.193s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.193s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.193s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.193s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.193s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.194s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, rclcpp::ParameterType)[m[K’
+[1.194s]    53 | [01;36m[Koperator[m[K<<(std::ostream & os, ParameterType type);
+[1.194s]       | [01;36m[K^~~~~~~~[m[K
+[1.194s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.194s]    53 | operator<<([01;36m[Kstd::ostream & os[m[K, ParameterType type);
+[1.194s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.195s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.195s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.195s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.195s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.196s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.196s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.196s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.196s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::Parameter&)[m[K’
+[1.196s]   226 | [01;36m[Koperator[m[K<<(std::ostream & os, const rclcpp::Parameter & pv);
+[1.196s]       | [01;36m[K^~~~~~~~[m[K
+[1.196s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.197s]   226 | operator<<([01;36m[Kstd::ostream & os[m[K, const rclcpp::Parameter & pv);
+[1.197s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.197s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const std::vector<rclcpp::Parameter>&)[m[K’
+[1.197s]   230 | [01;36m[Koperator[m[K<<(std::ostream & os, const std::vector<Parameter> & parameters);
+[1.197s]       | [01;36m[K^~~~~~~~[m[K
+[1.197s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.198s]   230 | operator<<([01;36m[Kstd::ostream & os[m[K, const std::vector<Parameter> & parameters);
+[1.198s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.198s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.198s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.198s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.198s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.199s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.200s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.200s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.200s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.200s]    80 |   [01;31m[KRCLCPP_WARN_STREAM[m[K("error_handling : " << this->get_logger(), message);
+[1.200s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.200s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.200s]    80 |   [01;31m[KRCLCPP_WARN_STREAM[m[K("error_handling : " << this->get_logger(), message);
+[1.200s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.201s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.201s]    80 |   [01;31m[KRCLCPP_WARN_STREAM[m[K("error_handling : " << this->get_logger(), message);
+[1.201s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.201s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.209s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.210s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.211s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:42:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kconst char [18][m[K’ and ‘[01m[Krclcpp::Logger[m[K’)
+[1.211s]    80 |   RCLCPP_WARN_STREAM([32m[K"error_handling : "[m[K [01;31m[K<<[m[K [34m[Kthis->get_logger()[m[K, message);
+[1.211s]       |                      [32m[K~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~[m[K
+[1.211s]       |                      [32m[K|[m[K                                      [34m[K|[m[K
+[1.212s]       |                      [32m[Kconst char [18][m[K                        [34m[Krclcpp::Logger[m[K
+[1.212s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:34[m[K,
+[1.212s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.212s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.213s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.213s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.213s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.213s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::FutureReturnCode&)[m[K’
+[1.214s]    38 | [01;36m[Koperator[m[K<<(std::ostream & os, const FutureReturnCode & future_return_code);
+[1.214s]       | [01;36m[K^~~~~~~~[m[K
+[1.214s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.214s]    38 | operator<<([01;36m[Kstd::ostream & os[m[K, const FutureReturnCode & future_return_code);
+[1.214s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.215s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:26[m[K,
+[1.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.220s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.220s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.220s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.221s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.221s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.221s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, rclcpp::ParameterType)[m[K’
+[1.222s]    53 | [01;36m[Koperator[m[K<<(std::ostream & os, ParameterType type);
+[1.222s]       | [01;36m[K^~~~~~~~[m[K
+[1.223s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.223s]    53 | operator<<([01;36m[Kstd::ostream & os[m[K, ParameterType type);
+[1.223s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.223s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.224s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.224s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.225s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.225s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.225s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.227s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.228s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::Parameter&)[m[K’
+[1.228s]   226 | [01;36m[Koperator[m[K<<(std::ostream & os, const rclcpp::Parameter & pv);
+[1.228s]       | [01;36m[K^~~~~~~~[m[K
+[1.229s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.229s]   226 | operator<<([01;36m[Kstd::ostream & os[m[K, const rclcpp::Parameter & pv);
+[1.229s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.230s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const std::vector<rclcpp::Parameter>&)[m[K’
+[1.230s]   230 | [01;36m[Koperator[m[K<<(std::ostream & os, const std::vector<Parameter> & parameters);
+[1.230s]       | [01;36m[K^~~~~~~~[m[K
+[1.231s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.232s]   230 | operator<<([01;36m[Kstd::ostream & os[m[K, const std::vector<Parameter> & parameters);
+[1.233s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.233s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.234s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.235s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.235s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.235s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.238s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.238s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.238s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.239s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.239s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.239s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.239s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.239s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:80:42:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kconst char [18][m[K’ and ‘[01m[Krclcpp::Logger[m[K’)
+[1.239s]    80 |   RCLCPP_WARN_STREAM([32m[K"error_handling : "[m[K [01;31m[K<<[m[K [34m[Kthis->get_logger()[m[K, message);
+[1.240s]       |                      [32m[K~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~[m[K
+[1.240s]       |                      [32m[K|[m[K                                      [34m[K|[m[K
+[1.240s]       |                      [32m[Kconst char [18][m[K                        [34m[Krclcpp::Logger[m[K
+[1.240s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:34[m[K,
+[1.240s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.241s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.241s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.241s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.241s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.241s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::FutureReturnCode&)[m[K’
+[1.242s]    38 | [01;36m[Koperator[m[K<<(std::ostream & os, const FutureReturnCode & future_return_code);
+[1.242s]       | [01;36m[K^~~~~~~~[m[K
+[1.242s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.242s]    38 | operator<<([01;36m[Kstd::ostream & os[m[K, const FutureReturnCode & future_return_code);
+[1.246s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.247s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:26[m[K,
+[1.248s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.248s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.248s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.249s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.249s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.251s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.251s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.252s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, rclcpp::ParameterType)[m[K’
+[1.252s]    53 | [01;36m[Koperator[m[K<<(std::ostream & os, ParameterType type);
+[1.252s]       | [01;36m[K^~~~~~~~[m[K
+[1.253s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.253s]    53 | operator<<([01;36m[Kstd::ostream & os[m[K, ParameterType type);
+[1.253s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.253s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.254s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.255s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.256s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.256s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.257s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/include/tcp_socket_server.hpp:15[m[K,
+[1.257s]                  from [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:3[m[K:
+[1.257s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::Parameter&)[m[K’
+[1.257s]   226 | [01;36m[Koperator[m[K<<(std::ostream & os, const rclcpp::Parameter & pv);
+[1.257s]       | [01;36m[K^~~~~~~~[m[K
+[1.258s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.258s]   226 | operator<<([01;36m[Kstd::ostream & os[m[K, const rclcpp::Parameter & pv);
+[1.259s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[1.259s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const std::vector<rclcpp::Parameter>&)[m[K’
+[1.259s]   230 | [01;36m[Koperator[m[K<<(std::ostream & os, const std::vector<Parameter> & parameters);
+[1.259s]       | [01;36m[K^~~~~~~~[m[K
+[1.259s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [18][m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[1.259s]   230 | operator<<([01;36m[Kstd::ostream & os[m[K, const std::vector<Parameter> & parameters);
+[1.259s]       |            [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[2.412s] make[2]: *** [CMakeFiles/tcp_socket.dir/build.make:63: CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o] Error 1
+[2.413s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/tcp_socket.dir/all] Error 2
+[2.413s] make: *** [Makefile:141: all] Error 2
+[2.417s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28

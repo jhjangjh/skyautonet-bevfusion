@@ -128,31 +128,31 @@ float Sort::iou(SortRect rect1, SortRect rect2) {
 
     // // SortRect -> Point_struct
 
-    // //  p0-----p1
+    // //  p0-----p3
     // //  |       |
     // //  |   .   |
     // //  |       |
-    // //  p2-----p3
+    // //  p1-----p2
 
     // // 원점기준 각 점의 좌표
 
     // float rect1_O_x0 = -rect1.width / 2.0;
-    // float rect1_O_x1 =  rect1.width / 2.0;
-    // float rect1_O_x2 = -rect1.width / 2.0;
+    // float rect1_O_x1 = -rect1.width / 2.0;
+    // float rect1_O_x2 =  rect1.width / 2.0;
     // float rect1_O_x3 =  rect1.width / 2.0;
     // float rect1_O_y0 =  rect1.length / 2.0;
-    // float rect1_O_y1 =  rect1.length / 2.0;
+    // float rect1_O_y1 = -rect1.length / 2.0;
     // float rect1_O_y2 = -rect1.length / 2.0;
-    // float rect1_O_y3 = -rect1.length / 2.0;
+    // float rect1_O_y3 =  rect1.length / 2.0;
 
     // float rect2_O_x0 = -rect2.width / 2.0;
-    // float rect2_O_x1 =  rect2.width / 2.0;
-    // float rect2_O_x2 = -rect2.width / 2.0;
+    // float rect2_O_x1 = -rect2.width / 2.0;
+    // float rect2_O_x2 =  rect2.width / 2.0;
     // float rect2_O_x3 =  rect2.width / 2.0;
     // float rect2_O_y0 =  rect2.length / 2.0;
-    // float rect2_O_y1 =  rect2.length / 2.0;
+    // float rect2_O_y1 = -rect2.length / 2.0;
     // float rect2_O_y2 = -rect2.length / 2.0;
-    // float rect2_O_y3 = -rect2.length / 2.0;
+    // float rect2_O_y3 =  rect2.length / 2.0;
 
     // // 원점에서 회전변환된 각 점의 좌표
 

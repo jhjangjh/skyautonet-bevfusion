@@ -1,0 +1,15 @@
+[0.022s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.101s] [35m[1mScanning dependencies of target tcp_socket[0m
+[0.148s] [ 50%] [32mBuilding CXX object CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o[0m
+[1.200s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::Run()[m[K’:
+[1.201s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:57:11:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[KBox[m[K’ {aka ‘[01m[K_box[m[K’} to ‘[01m[KBox [50][m[K’ {aka ‘[01m[K_box [50][m[K’}
+[1.202s]    57 |   i.box = [01;31m[Kb[m[K;
+[1.202s]       |           [01;31m[K^[m[K
+[1.208s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::callback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.208s] [01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:63:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.208s]    63 | void TCPServer::callback([01;35m[Kconst OutputArray::SharedPtr msg[m[K)
+[1.209s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.501s] make[2]: *** [CMakeFiles/tcp_socket.dir/build.make:63: CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o] Error 1
+[2.501s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/tcp_socket.dir/all] Error 2
+[2.501s] make: *** [Makefile:141: all] Error 2
+[2.506s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28

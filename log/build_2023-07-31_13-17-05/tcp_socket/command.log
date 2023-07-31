@@ -1,0 +1,6 @@
+Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/bev/bev_ws/src/tcp_socket -DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/tcp_socket
+Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/bev/bev_ws/src/tcp_socket -DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/tcp_socket
+Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket
+Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket

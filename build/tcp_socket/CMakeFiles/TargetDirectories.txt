@@ -1,0 +1,10 @@
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/install/strip.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/edit_cache.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/test.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/install/local.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/tcp_socket.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/install.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/list_install_components.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/rebuild_cache.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/tcp_socket_uninstall.dir
+/home/bev/bev_ws/build/tcp_socket/CMakeFiles/uninstall.dir

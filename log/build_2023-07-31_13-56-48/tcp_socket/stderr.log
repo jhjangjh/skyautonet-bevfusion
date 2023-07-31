@@ -1,0 +1,11 @@
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In member function ‘[01m[Kvoid TCPServer::callback(custom_msgs::msg::OutputArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:57:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   57 | void TCPServer::callback([01;35m[Kconst OutputArray::SharedPtr msg[m[K)
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/bev/bev_ws/src/tcp_socket/src/tcp_socket_server.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kchar*[m[K’ [[01;35m[K-Wformat=[m[K]
+   74 |   printf("[01;35m[K%d[m[K",[32m[Kargv[1][m[K);
+      |           [01;35m[K~^[m[K  [32m[K~~~~~~~[m[K
+      |            [01;35m[K|[m[K        [32m[K|[m[K
+      |            [01;35m[Kint[m[K      [32m[Kchar*[m[K
+      |           [32m[K%s[m[K

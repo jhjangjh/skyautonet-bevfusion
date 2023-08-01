@@ -20,28 +20,21 @@ TCPServer::~TCPServer() {
 void TCPServer::Init()
 {
   std::cout << "Waiting client..." << std::endl;
-  // std::cout << "Init 0" << std::endl;
   serv_sock = socket(PF_INET, SOCK_STREAM, 0);
 
   int option = 1; // SO_REUSEADDR 의 옵션 값을 TRUE 로
   setsockopt(serv_sock, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
 
   if(serv_sock == -1) error_handling("socket error");
-  // std::cout << "Init 1" << std::endl;
   memset(&serv_addr, 0, sizeof(serv_addr));
-  // std::cout << "Init 2" << std::endl;
   serv_addr.sin_family=AF_INET;
   serv_addr.sin_addr.s_addr=htonl(INADDR_ANY);
-  // std::cout << "Init 2.5" << std::endl;
 
   serv_addr.sin_port=htons(atoi(PORT));
-  // std::cout << "Init 3" << std::endl;
   
   if(bind(serv_sock, (struct sockaddr*) &serv_addr, sizeof(serv_addr)) == -1) error_handling("bind error");
-  // std::cout << "Init 4" << std::endl;
   
   if(listen(serv_sock, 5) == -1) error_handling("listen error");
-  // std::cout << "Init 5" << std::endl;
 
   clnt_addr_size = sizeof(clnt_addr);
   clnt_sock=accept(serv_sock,(struct sockaddr*)&clnt_addr, &clnt_addr_size);
@@ -79,6 +72,8 @@ void TCPServer::Run(const OutputArray::SharedPtr msg)
     bev.obj[i] = obj;
   }
 
+  bev.time = std::chrono::high_resolution_clock::now();
+
   int len = sizeof(bev);
   send(clnt_sock, (char*)&bev, len,0);
   RCLCPP_INFO_STREAM(this->get_logger(),"send " + msg->header.frame_id);
@@ -94,7 +89,6 @@ void TCPServer::callback(const OutputArray::SharedPtr msg)
 
 void TCPServer::error_handling(std::string message)
 {
-
   RCLCPP_WARN_STREAM(this->get_logger(), ("error_handling : " + message));
   rclcpp::shutdown();
 }
@@ -103,8 +97,6 @@ int main (int argc, char * argv[])
 {
 	rclcpp::init (argc, argv);
   auto node = std::make_shared<TCPServer>();
-  // node->Init();
-  // node->Run();
   rclcpp::spin(node);
   rclcpp::shutdown();
 

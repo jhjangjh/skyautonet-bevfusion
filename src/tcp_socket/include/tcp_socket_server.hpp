@@ -43,6 +43,7 @@ typedef struct _bev
 {
   int size;
   Object obj[50];
+  std::chrono::system_clock::time_point time;
 }Bev;
 
 const char* PORT = "1234";

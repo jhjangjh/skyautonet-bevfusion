@@ -6,6 +6,8 @@
 #include <sys/socket.h>
 #include <vector>
 
+#include <chrono>
+
 typedef struct _box
 {
   float pos_x;
@@ -30,6 +32,7 @@ typedef struct _bev
 {
   int size;
   Object obj[50];
+  std::chrono::system_clock::time_point time;
 }Bev;
 
 const char* PORT = "1234";
@@ -83,7 +86,11 @@ int main(int argc, char * argv[])
       std::cout << std::endl;
       
 
-    }  
+    }
+
+    auto recvtime = std::chrono::high_resolution_clock::now(); 
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(bev.time - recvtime).count();
+    std::cout << "소켓 통신 지연 시간: " << duration*(1/1000000.0) << " seconds" << std::endl;
   }
   
  
@@ -93,7 +100,7 @@ int main(int argc, char * argv[])
 
 void error_handling(char *message)
 {
-    fputs(message, stderr);
-    fputc('\n',stderr);
-    exit(1);
+  fputs(message, stderr);
+  fputc('\n',stderr);
+  exit(1);
 }

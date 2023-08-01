@@ -29,17 +29,23 @@ typedef struct _box
   float yaw;
   float vel_x;
   float vel_y; 
-  // std::vector<int> ex;
 }Box;
 
-typedef struct _info
+typedef struct _object
 {
   int id;
   float score;
   int label;
   Box box;
-  
-}Info;
+}Object;
+
+typedef struct _bev
+{
+  int size;
+  Object obj[50];
+}Bev;
+
+const char* PORT = "1234";
 
 class TCPServer : public rclcpp::Node
 {
@@ -48,7 +54,7 @@ class TCPServer : public rclcpp::Node
     virtual ~TCPServer();
 
     void Init();
-    void Run();
+    void Run(const OutputArray::SharedPtr msg);
 
   private:
     void callback(const OutputArray::SharedPtr msg);

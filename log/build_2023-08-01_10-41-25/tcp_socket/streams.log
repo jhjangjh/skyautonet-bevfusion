@@ -1,0 +1,26 @@
+[0.019s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.107s] [35m[1mScanning dependencies of target tcp_socket[0m
+[0.155s] [ 50%] [32mBuilding CXX object CMakeFiles/tcp_socket.dir/src/tcp_socket_server.cpp.o[0m
+[4.112s] [100%] [32m[1mLinking CXX executable tcp_socket[0m
+[4.355s] [100%] Built target tcp_socket
+[4.370s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[4.427s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket
+[4.443s] -- Install configuration: ""
+[4.443s] -- Installing: /home/bev/bev_ws/install/tcp_socket/lib/tcp_socket/tcp_socket
+[4.444s] -- Set runtime path of "/home/bev/bev_ws/install/tcp_socket/lib/tcp_socket/tcp_socket" to ""
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/package_run_dependencies/tcp_socket
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/parent_prefix_path/tcp_socket
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/ament_prefix_path.sh
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/ament_prefix_path.dsv
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/path.sh
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/path.dsv
+[4.445s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.bash
+[4.446s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.sh
+[4.446s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.zsh
+[4.446s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.dsv
+[4.446s] -- Installing: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.dsv
+[4.446s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/packages/tcp_socket
+[4.447s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/cmake/tcp_socketConfig.cmake
+[4.447s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/cmake/tcp_socketConfig-version.cmake
+[4.447s] -- Up-to-date: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.xml
+[4.454s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket

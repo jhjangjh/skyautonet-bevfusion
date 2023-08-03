@@ -1,0 +1,8 @@
+source;share/risk_assessment/hook/cmake_prefix_path.ps1
+source;share/risk_assessment/hook/cmake_prefix_path.dsv
+source;share/risk_assessment/hook/cmake_prefix_path.sh
+source;share/risk_assessment/local_setup.bash
+source;share/risk_assessment/local_setup.dsv
+source;share/risk_assessment/local_setup.ps1
+source;share/risk_assessment/local_setup.sh
+source;share/risk_assessment/local_setup.zsh

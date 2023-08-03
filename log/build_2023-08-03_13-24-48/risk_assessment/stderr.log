@@ -1,0 +1,41 @@
+In file included from [01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:1[m[K:
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:21:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   21 | #define [01;35m[KCLASSIFICATION_UNKNOWN[m[K=0
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:22:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   22 | #define [01;35m[KCLASSIFICATION_UNKNOWN_SMALL[m[K=1
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:23:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   23 | #define [01;35m[KCLASSIFICATION_UNKNOWN_MEDIUM[m[K=2
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:24:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   24 | #define [01;35m[KCLASSIFICATION_UNKNOWN_BIG[m[K=3
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:25:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   25 | #define [01;35m[KCLASSIFICATION_PEDESTRIAN[m[K=4
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:26:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   26 | #define [01;35m[KCLASSIFICATION_BIKE[m[K=5
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:27:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   27 | #define [01;35m[KCLASSIFICATION_CAR[m[K=6
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:28:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   28 | #define [01;35m[KCLASSIFICATION_TRUCK[m[K=7
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:29:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   29 | #define [01;35m[KCLASSIFICATION_MOTORCYCLE[m[K=8
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:30:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   30 | #define [01;35m[KCLASSIFICATION_OTHER_VEHICLE[m[K=9
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:31:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   31 | #define [01;35m[KCLASSIFICATION_BARRIER[m[K=10
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:32:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+   32 | #define [01;35m[KCLASSIFICATION_SIGN[m[K=11
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:[m[K In member function ‘[01m[Kvoid Calculate::ObjectCallback(derived_object_msgs::msg::ObjectArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:33:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<derived_object_msgs::msg::Object_<std::allocator<void> >, std::allocator<derived_object_msgs::msg::Object_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   33 |   for(auto i = 0 ; [01;35m[Ki < msg->objects.size()[m[K ; i++)
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K

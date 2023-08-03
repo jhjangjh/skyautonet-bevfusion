@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target risk_assessment[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/risk_assessment.dir/src/calculate_risk.cpp.o[0m
+[01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:[m[K In member function ‘[01m[Kvoid Calculate::ObjectCallback(derived_object_msgs::msg::ObjectArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:33:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<derived_object_msgs::msg::Object_<std::allocator<void> >, std::allocator<derived_object_msgs::msg::Object_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   33 |   for(auto i = 0 ; [01;35m[Ki < msg->objects.size()[m[K ; i++)
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable risk_assessment[0m
+[100%] Built target risk_assessment
+-- Install configuration: ""
+-- Installing: /home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment
+-- Set runtime path of "/home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment" to ""
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/package_run_dependencies/risk_assessment
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/parent_prefix_path/risk_assessment
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.sh
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.sh
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.dsv
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.bash
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.sh
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.zsh
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.dsv
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.dsv
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/packages/risk_assessment
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig.cmake
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig-version.cmake
+-- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.xml

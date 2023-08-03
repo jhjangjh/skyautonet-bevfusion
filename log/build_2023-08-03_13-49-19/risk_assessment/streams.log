@@ -1,0 +1,50 @@
+[0.030s] Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[0.067s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.108s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.325s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.352s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.355s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.476s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.517s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.518s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.639s] -- Found carla_msgs: 1.3.0 (/home/bev/carla-ros-bridge/install/carla_msgs/share/carla_msgs/cmake)
+[0.789s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.849s] -- Found derived_object_msgs: 4.0.0 (/opt/ros/foxy/share/derived_object_msgs/cmake)
+[1.021s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.082s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.181s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.182s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.183s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/risk_assessment/include
+[1.183s] -- Configured cppcheck exclude dirs and/or files: 
+[1.183s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.184s] -- Configured cpplint exclude dirs and/or files: 
+[1.184s] -- Added test 'lint_cmake' to check CMake code style
+[1.185s] -- Added test 'uncrustify' to check C / C++ code style
+[1.185s] -- Configured uncrustify additional arguments: 
+[1.186s] -- Added test 'xmllint' to check XML markup files
+[1.188s] -- Configuring done
+[1.202s] -- Generating done
+[1.203s] -- Build files have been written to: /home/bev/bev_ws/build/risk_assessment
+[1.278s] [ 50%] [32m[1mLinking CXX executable risk_assessment[0m
+[1.647s] [100%] Built target risk_assessment
+[1.672s] Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[1.726s] Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment
+[1.744s] -- Install configuration: ""
+[1.745s] -- Installing: /home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment
+[1.747s] -- Set runtime path of "/home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment" to ""
+[1.747s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/package_run_dependencies/risk_assessment
+[1.747s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/parent_prefix_path/risk_assessment
+[1.748s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.sh
+[1.748s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.dsv
+[1.748s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.sh
+[1.748s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.dsv
+[1.748s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.bash
+[1.748s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.sh
+[1.749s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.zsh
+[1.749s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.dsv
+[1.749s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.dsv
+[1.749s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/packages/risk_assessment
+[1.754s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig.cmake
+[1.754s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig-version.cmake
+[1.755s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.xml
+[1.755s] Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment

@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target risk_assessment[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/risk_assessment.dir/src/calculate_risk.cpp.o[0m
+[100%] [32m[1mLinking CXX executable risk_assessment[0m

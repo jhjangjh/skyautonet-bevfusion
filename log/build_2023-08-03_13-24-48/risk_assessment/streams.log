@@ -1,0 +1,67 @@
+[0.031s] Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[0.119s] [35m[1mScanning dependencies of target risk_assessment[0m
+[0.170s] [ 50%] [32mBuilding CXX object CMakeFiles/risk_assessment.dir/src/calculate_risk.cpp.o[0m
+[0.282s] In file included from [01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:1[m[K:
+[0.282s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:21:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.282s]    21 | #define [01;35m[KCLASSIFICATION_UNKNOWN[m[K=0
+[0.282s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.282s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:22:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.282s]    22 | #define [01;35m[KCLASSIFICATION_UNKNOWN_SMALL[m[K=1
+[0.283s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.283s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:23:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.283s]    23 | #define [01;35m[KCLASSIFICATION_UNKNOWN_MEDIUM[m[K=2
+[0.283s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.283s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:24:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.283s]    24 | #define [01;35m[KCLASSIFICATION_UNKNOWN_BIG[m[K=3
+[0.283s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.284s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:25:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.284s]    25 | #define [01;35m[KCLASSIFICATION_PEDESTRIAN[m[K=4
+[0.284s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.284s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:26:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.284s]    26 | #define [01;35m[KCLASSIFICATION_BIKE[m[K=5
+[0.284s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.284s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:27:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.284s]    27 | #define [01;35m[KCLASSIFICATION_CAR[m[K=6
+[0.285s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.285s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:28:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.285s]    28 | #define [01;35m[KCLASSIFICATION_TRUCK[m[K=7
+[0.285s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.285s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:29:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.285s]    29 | #define [01;35m[KCLASSIFICATION_MOTORCYCLE[m[K=8
+[0.285s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.285s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:30:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.286s]    30 | #define [01;35m[KCLASSIFICATION_OTHER_VEHICLE[m[K=9
+[0.286s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.286s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:31:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.287s]    31 | #define [01;35m[KCLASSIFICATION_BARRIER[m[K=10
+[0.287s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.287s] [01m[K/home/bev/bev_ws/src/risk_assessment/include/calculate_risk.hpp:32:9:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+[0.287s]    32 | #define [01;35m[KCLASSIFICATION_SIGN[m[K=11
+[0.287s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.303s] [01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:[m[K In member function ‘[01m[Kvoid Calculate::ObjectCallback(derived_object_msgs::msg::ObjectArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.303s] [01m[K/home/bev/bev_ws/src/risk_assessment/src/calculate_risk.cpp:33:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<derived_object_msgs::msg::Object_<std::allocator<void> >, std::allocator<derived_object_msgs::msg::Object_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[1.303s]    33 |   for(auto i = 0 ; [01;35m[Ki < msg->objects.size()[m[K ; i++)
+[1.303s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.022s] [100%] [32m[1mLinking CXX executable risk_assessment[0m
+[6.360s] [100%] Built target risk_assessment
+[6.389s] Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[6.466s] Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment
+[6.487s] -- Install configuration: ""
+[6.487s] -- Installing: /home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment
+[6.493s] -- Set runtime path of "/home/bev/bev_ws/install/risk_assessment/lib/risk_assessment/risk_assessment" to ""
+[6.493s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/package_run_dependencies/risk_assessment
+[6.493s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/parent_prefix_path/risk_assessment
+[6.493s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.sh
+[6.493s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/ament_prefix_path.dsv
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.sh
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/environment/path.dsv
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.bash
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.sh
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.zsh
+[6.494s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/local_setup.dsv
+[6.494s] -- Installing: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.dsv
+[6.495s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/ament_index/resource_index/packages/risk_assessment
+[6.495s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig.cmake
+[6.495s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/cmake/risk_assessmentConfig-version.cmake
+[6.495s] -- Up-to-date: /home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.xml
+[6.502s] Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment

@@ -5,7 +5,7 @@ set(tracking_algorithm_BUILD_DEPENDS "rclcpp" "std_msgs" "visualization_msgs" "O
 set(tracking_algorithm_BUILDTOOL_DEPENDS "ament_cmake")
 set(tracking_algorithm_BUILD_EXPORT_DEPENDS "rclcpp" "std_msgs" "visualization_msgs" "OpenCV" "custom_msgs")
 set(tracking_algorithm_BUILDTOOL_EXPORT_DEPENDS )
-set(tracking_algorithm_EXEC_DEPENDS "rclcpp" "std_msgs" "visualization_msgs" "OpenCV" "custom_msgs")
+set(tracking_algorithm_EXEC_DEPENDS "ros2launch" "rclcpp" "std_msgs" "visualization_msgs" "OpenCV" "custom_msgs")
 set(tracking_algorithm_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(tracking_algorithm_GROUP_DEPENDS )
 set(tracking_algorithm_MEMBER_OF_GROUPS )

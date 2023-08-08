@@ -1,2 +1,1 @@
-std_msgs/Header header
-Output[] outputs
+/home/bev/bev_ws/src/custom_msgs/msg/OutputArray.msg

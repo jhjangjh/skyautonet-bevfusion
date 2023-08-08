@@ -14,6 +14,7 @@
   <depend>visualization_msgs</depend>
   <depend>OpenCV</depend>
   <depend>custom_msgs</depend>
+  <exec_depend>ros2launch</exec_depend>
 
 
   <test_depend>ament_lint_auto</test_depend>

@@ -1,0 +1,49 @@
+[0.033s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake /home/bev/bev_ws/src/tcp_socket -DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/tcp_socket
+[0.059s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.102s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.284s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.301s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.339s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.341s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.488s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.490s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.604s] -- Found custom_msgs: 0.0.0 (/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/cmake)
+[0.631s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.713s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.713s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.714s] -- Configured cppcheck include dirs: /home/bev/bev_ws/src/tcp_socket/include
+[0.714s] -- Configured cppcheck exclude dirs and/or files: 
+[0.714s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.715s] -- Configured cpplint exclude dirs and/or files: 
+[0.715s] -- Added test 'lint_cmake' to check CMake code style
+[0.715s] -- Added test 'uncrustify' to check C / C++ code style
+[0.715s] -- Configured uncrustify additional arguments: 
+[0.716s] -- Added test 'xmllint' to check XML markup files
+[0.717s] -- Configuring done
+[0.722s] -- Generating done
+[0.723s] -- Build files have been written to: /home/bev/bev_ws/build/tcp_socket
+[0.732s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake /home/bev/bev_ws/src/tcp_socket -DCMAKE_INSTALL_PREFIX=/home/bev/bev_ws/install/tcp_socket
+[0.738s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.876s] [100%] Built target tcp_socket
+[0.895s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.984s] Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket
+[1.003s] -- Install configuration: ""
+[1.003s] -- Execute custom install script
+[1.004s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/lib/tcp_socket/tcp_socket
+[1.004s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/package_run_dependencies/tcp_socket
+[1.004s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/parent_prefix_path/tcp_socket
+[1.005s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/ament_prefix_path.sh
+[1.005s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/ament_prefix_path.dsv
+[1.005s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/path.sh
+[1.006s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/environment/path.dsv
+[1.006s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.bash
+[1.006s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.sh
+[1.007s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.zsh
+[1.007s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/local_setup.dsv
+[1.007s] -- Symlinking: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.dsv
+[1.018s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/ament_index/resource_index/packages/tcp_socket
+[1.018s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/cmake/tcp_socketConfig.cmake
+[1.018s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/cmake/tcp_socketConfig-version.cmake
+[1.019s] -- Up-to-date symlink: /home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.xml
+[1.023s] Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket

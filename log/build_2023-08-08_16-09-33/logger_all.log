@@ -1,0 +1,414 @@
+[0.290s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.290s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5a79658550>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=28, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5a79658550>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5a79658a90>)
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.322s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bev/bev_ws'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_pkg) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_pkg' with type 'ros.ament_cmake' and name 'data_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/risk_assessment) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/risk_assessment' with type 'ros.ament_cmake' and name 'risk_assessment'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tcp_socket) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tcp_socket' with type 'ros.ament_cmake' and name 'tcp_socket'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/tracking_algorithm) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tracking_algorithm' with type 'ros.ament_cmake' and name 'tracking_algorithm'
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/bev/bev_ws/install
+[0.367s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/bev/carla-ros-bridge/install
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 278 installed packages in /opt/ros/foxy
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/bev/bev_ws/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'risk_assessment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'risk_assessment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/risk_assessment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/risk_assessment', 'merge_install': False, 'path': '/home/bev/bev_ws/src/risk_assessment', 'symlink_install': False, 'test_result_base': None}
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_target' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'tcp_socket' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'tcp_socket' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/tcp_socket', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/tcp_socket', 'merge_install': False, 'path': '/home/bev/bev_ws/src/tcp_socket', 'symlink_install': False, 'test_result_base': None}
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_target' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'data_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.424s] DEBUG:colcon.colcon_core.verb:Building package 'data_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/data_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/data_pkg', 'merge_install': False, 'path': '/home/bev/bev_ws/src/data_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_target' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_clean_first' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'cmake_force_configure' from command line to 'False'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'ament_cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.425s] Level 5:colcon.colcon_core.verb:set package 'tracking_algorithm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.425s] DEBUG:colcon.colcon_core.verb:Building package 'tracking_algorithm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bev/bev_ws/build/tracking_algorithm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bev/bev_ws/install/tracking_algorithm', 'merge_install': False, 'path': '/home/bev/bev_ws/src/tracking_algorithm', 'symlink_install': False, 'test_result_base': None}
+[0.425s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.428s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/custom_msgs'
+[0.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.440s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/risk_assessment' with build type 'ament_cmake'
+[0.441s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/risk_assessment'
+[0.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.449s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/tcp_socket' with build type 'ament_cmake'
+[0.450s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/tcp_socket'
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/custom_msgs -- -j28 -l28
+[0.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[0.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/tcp_socket -- -j28 -l28
+[0.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/risk_assessment -- -j28 -l28
+[0.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tcp_socket': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket
+[0.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/risk_assessment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment
+[0.719s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tcp_socket)
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tcp_socket' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/tcp_socket
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket' for CMake module files
+[0.736s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket' for CMake config files
+[0.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('tcp_socket', 'cmake_prefix_path')
+[0.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.dsv'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.sh'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/bin'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib/pkgconfig/tcp_socket.pc'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib/python3.8/site-packages'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/bin'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.ps1'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.sh'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.bash'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.zsh'
+[0.750s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tcp_socket/share/colcon-core/packages/tcp_socket)
+[0.755s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(risk_assessment)
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment' for CMake module files
+[0.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/risk_assessment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/risk_assessment
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment' for CMake config files
+[0.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('risk_assessment', 'cmake_prefix_path')
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.dsv'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.sh'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/bin'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib/pkgconfig/risk_assessment.pc'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib/python3.8/site-packages'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/bin'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.ps1'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.dsv'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.sh'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.bash'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.zsh'
+[0.765s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/risk_assessment/share/colcon-core/packages/risk_assessment)
+[0.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tcp_socket)
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket' for CMake module files
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('tcp_socket', 'cmake_prefix_path')
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/hook/cmake_prefix_path.sh'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/bin'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib/pkgconfig/tcp_socket.pc'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/lib/python3.8/site-packages'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tcp_socket/bin'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.dsv'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.sh'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.bash'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tcp_socket/share/tcp_socket/package.zsh'
+[0.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tcp_socket/share/colcon-core/packages/tcp_socket)
+[0.831s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(risk_assessment)
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment' for CMake module files
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment' for CMake config files
+[0.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('risk_assessment', 'cmake_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.ps1'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.dsv'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/hook/cmake_prefix_path.sh'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/bin'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib/pkgconfig/risk_assessment.pc'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/lib/python3.8/site-packages'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/risk_assessment/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.bash'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/risk_assessment/share/risk_assessment/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/risk_assessment/share/colcon-core/packages/risk_assessment)
+[0.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --build /home/bev/bev_ws/build/custom_msgs -- -j28 -l28
+[1.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/custom_msgs
+[1.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake module files
+[1.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy /usr/bin/cmake --install /home/bev/bev_ws/build/custom_msgs
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake config files
+[1.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.323s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib'
+[1.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.325s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[1.325s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.325s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages'
+[1.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[1.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.330s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.566s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake module files
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs' for CMake config files
+[1.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.575s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib'
+[1.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/lib/python3.8/site-packages'
+[1.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/custom_msgs/bin'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.589s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/data_pkg' with build type 'ament_cmake'
+[1.589s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/data_pkg'
+[1.591s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.591s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.601s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bev/bev_ws/src/tracking_algorithm' with build type 'ament_cmake'
+[1.602s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bev/bev_ws/src/tracking_algorithm'
+[1.606s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.606s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[1.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[1.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/data_pkg -- -j28 -l28
+[1.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/data_pkg': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[1.897s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_pkg)
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake module files
+[1.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/data_pkg
+[1.905s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake config files
+[1.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_pkg', 'cmake_prefix_path')
+[1.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.ps1'
+[1.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.dsv'
+[1.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.sh'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[1.913s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/pkgconfig/data_pkg.pc'
+[1.913s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/python3.8/site-packages'
+[1.913s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[1.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.ps1'
+[1.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.sh'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.bash'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.zsh'
+[1.920s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/data_pkg/share/colcon-core/packages/data_pkg)
+[1.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_pkg)
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake module files
+[1.991s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg' for CMake config files
+[1.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_pkg', 'cmake_prefix_path')
+[1.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.ps1'
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.dsv'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/data_pkg/share/data_pkg/hook/cmake_prefix_path.sh'
+[1.996s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/pkgconfig/data_pkg.pc'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/lib/python3.8/site-packages'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/data_pkg/bin'
+[2.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.ps1'
+[2.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.dsv'
+[2.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.sh'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.bash'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/data_pkg/share/data_pkg/package.zsh'
+[2.003s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/data_pkg/share/colcon-core/packages/data_pkg)
+[7.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --build /home/bev/bev_ws/build/tracking_algorithm -- -j28 -l28
+[7.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bev/bev_ws/build/tracking_algorithm': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm
+[7.376s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracking_algorithm)
+[7.383s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake module files
+[7.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bev/bev_ws/build/tracking_algorithm' returned '0': CMAKE_PREFIX_PATH=/home/bev/bev_ws/install/custom_msgs:/home/bev/bev_ws/install/tracking_algorithm:/home/bev/bev_ws/install/tcp_socket:/home/bev/bev_ws/install/risk_assessment:/home/bev/bev_ws/install/data_pkg:/home/bev/carla-ros-bridge/install/carla_ad_demo:/home/bev/carla-ros-bridge/install/rviz_carla_plugin:/home/bev/carla-ros-bridge/install/pcl_recorder:/home/bev/carla-ros-bridge/install/carla_waypoint_types:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs:/home/bev/carla-ros-bridge/install/carla_msgs:/home/bev/carla-ros-bridge/install/rqt_carla_control:/home/bev/carla-ros-bridge/install/carla_waypoint_publisher:/home/bev/carla-ros-bridge/install/carla_ackermann_control:/home/bev/carla-ros-bridge/install/carla_ros_bridge:/home/bev/carla-ros-bridge/install/carla_spawn_objects:/home/bev/carla-ros-bridge/install/carla_manual_control:/home/bev/carla-ros-bridge/install/carla_ad_agent:/home/bev/carla-ros-bridge/install/ros_compatibility:/home/bev/carla-ros-bridge/install/carla_walker_agent:/home/bev/carla-ros-bridge/install/carla_twist_to_control:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner:/home/bev/carla-ros-bridge/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/bev/bev_ws/install/custom_msgs/lib:/home/bev/carla-ros-bridge/install/rviz_carla_plugin/lib:/home/bev/carla-ros-bridge/install/carla_waypoint_types/lib:/home/bev/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib:/home/bev/carla-ros-bridge/install/carla_ackermann_msgs/lib:/home/bev/carla-ros-bridge/install/carla_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.3/lib64:/home/bev/TensorRT-8.6.1.6/lib /usr/bin/cmake --install /home/bev/bev_ws/build/tracking_algorithm
+[7.384s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake config files
+[7.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracking_algorithm', 'cmake_prefix_path')
+[7.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.ps1'
+[7.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.dsv'
+[7.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.sh'
+[7.391s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib'
+[7.391s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[7.391s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/pkgconfig/tracking_algorithm.pc'
+[7.391s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/python3.8/site-packages'
+[7.391s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[7.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.ps1'
+[7.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv'
+[7.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.sh'
+[7.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.bash'
+[7.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.zsh'
+[7.396s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tracking_algorithm/share/colcon-core/packages/tracking_algorithm)
+[7.493s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tracking_algorithm)
+[7.496s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake module files
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm' for CMake config files
+[7.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('tracking_algorithm', 'cmake_prefix_path')
+[7.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.ps1'
+[7.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.dsv'
+[7.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/hook/cmake_prefix_path.sh'
+[7.499s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib'
+[7.499s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[7.499s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/pkgconfig/tracking_algorithm.pc'
+[7.500s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/lib/python3.8/site-packages'
+[7.500s] Level 1:colcon.colcon_core.environment:checking '/home/bev/bev_ws/install/tracking_algorithm/bin'
+[7.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.ps1'
+[7.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.dsv'
+[7.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.sh'
+[7.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.bash'
+[7.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/bev/bev_ws/install/tracking_algorithm/share/tracking_algorithm/package.zsh'
+[7.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bev/bev_ws/install/tracking_algorithm/share/colcon-core/packages/tracking_algorithm)
+[7.503s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.503s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.503s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.503s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.516s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.516s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.517s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.543s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.547s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.ps1'
+[7.549s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bev/bev_ws/install/_local_setup_util_ps1.py'
+[7.551s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.ps1'
+[7.555s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.sh'
+[7.556s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bev/bev_ws/install/_local_setup_util_sh.py'
+[7.557s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.sh'
+[7.560s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.bash'
+[7.560s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.bash'
+[7.563s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bev/bev_ws/install/local_setup.zsh'
+[7.564s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bev/bev_ws/install/setup.zsh'

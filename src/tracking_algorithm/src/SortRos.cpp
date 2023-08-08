@@ -4,12 +4,22 @@ SortRos::SortRos() : Node("sort_ros") {
   // this->declare_parameter("param_maxAge", 1);
   // this->declare_parameter("param_minHits", 2);
   // this->declare_parameter("param_iouThreshold", 0.9);
+
+  // param_maxAge = this->get_parameter("param_maxAge").as_int();
+  // param_minHits = this->get_parameter("param_minHits").as_int();
+  // param_iouThreshold = this->get_parameter("param_iouThreshold").as_double();
+
 }
 
 void SortRos::setup() {
   double maxAge = 7;
   double minHits = 0;
   double iouThreshold = 0.00001;
+  // this->declare_parameter("param_maxAge", 1);
+  // this->declare_parameter("param_minHits", 2);
+  // this->declare_parameter("param_iouThreshold", 0.9);
+
+
 
   sorter = new Sort(maxAge, minHits, iouThreshold);
   // sorter = new Sort(param_maxAge, param_minHits, param_iouThreshold);

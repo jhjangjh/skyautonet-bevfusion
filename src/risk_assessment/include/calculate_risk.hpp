@@ -41,7 +41,7 @@ public:
     void Run();
     void calculateRisk();
     double GetDistance(double x1, double y1, double x2, double y2);
-    double GetRelaticeVelocity(double vx1, double vy1, double vx2, double vy2);
+    double GetRelativeVelocity(double vx1, double vy1, double vx2, double vy2);
     double GetTTC(double distance, double rel_velocity);
 
     // rclcpp::TimerBase::SharedPtr timer_;

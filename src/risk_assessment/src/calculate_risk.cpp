@@ -55,7 +55,7 @@ void Calculate::calculateRisk()
     double ttc;
 
     distance = GetDistance(ego_x_,ego_y_,itr->pose.position.x,itr->pose.position.y);
-    rel_velocity = GetRelaticeVelocity(ego_vx_,ego_vy_,itr->twist.linear.x,itr->twist.linear.y);
+    rel_velocity = GetRelativeVelocity(ego_vx_,ego_vy_,itr->twist.linear.x,itr->twist.linear.y);
     ttc = GetTTC(distance,rel_velocity);
 
     RCLCPP_INFO_STREAM(logger,"Object ID :" << itr->id);
@@ -106,7 +106,7 @@ double Calculate::GetDistance(double x1, double y1, double x2, double y2)
   return distance;
 }
 
-double Calculate::GetRelaticeVelocity(double vx1, double vy1, double vx2, double vy2)
+double Calculate::GetRelativeVelocity(double vx1, double vy1, double vx2, double vy2)
 {
   double rel_velocity;
   rel_velocity = sqrt(pow((vx1-vx2),2)+pow((vy1-vy2),2));

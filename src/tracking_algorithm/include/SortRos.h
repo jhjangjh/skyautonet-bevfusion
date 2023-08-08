@@ -36,6 +36,10 @@ private:
 
   float vel_x;
   float vel_y;
+
+  // double param_maxAge;
+  // double param_minHits;
+  // double param_iouThreshold;
   
 };
 

@@ -1,2 +1,1 @@
-source;share/tcp_socket/environment/ament_prefix_path.sh
-source;share/tcp_socket/environment/path.sh
+/home/bev/bev_ws/build/tcp_socket/ament_cmake_environment_hooks/local_setup.dsv

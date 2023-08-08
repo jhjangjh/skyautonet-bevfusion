@@ -40,6 +40,8 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
 
 # add_executable(sort_ros_custom src/main.cpp src/Hungarian.cpp src/Sort.cpp src/SortRect.cpp src/SortRos_custom.cpp src/Tracker.cpp src/TrackerState.cpp)
 # ament_target_dependencies(sort_ros_custom

@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from custom_msgs/msg/OutputArray.msg
-// generated code does not contain a copyright notice
-
-#include "custom_msgs/msg/Output.idl"
-#include "std_msgs/msg/Header.idl"
-
-module custom_msgs {
-  module msg {
-    struct OutputArray {
-      std_msgs::msg::Header header;
-
-      sequence<custom_msgs::msg::Output> outputs;
-    };
-  };
-};
+/home/bev/bev_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/OutputArray.idl

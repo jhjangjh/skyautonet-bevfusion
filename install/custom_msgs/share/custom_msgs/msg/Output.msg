@@ -1,4 +1,1 @@
-int64 id
-float64 score
-int64 label
-Bbox box
+/home/bev/bev_ws/src/custom_msgs/msg/Output.msg

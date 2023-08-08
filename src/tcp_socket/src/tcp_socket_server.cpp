@@ -72,9 +72,10 @@ void TCPServer::Run(const OutputArray::SharedPtr msg)
     bev.obj[i] = obj;
   }
 
-  bev.time = std::chrono::high_resolution_clock::now();
 
+  // bev.time = std::chrono::system_clock::now();
   int len = sizeof(bev);
+  bev.time = std::chrono::high_resolution_clock::now();
   send(clnt_sock, (char*)&bev, len,0);
   RCLCPP_INFO_STREAM(this->get_logger(),"send " + msg->header.frame_id);
 }

@@ -1,2 +1,1 @@
-source;share/tracking_algorithm/environment/ament_prefix_path.sh
-source;share/tracking_algorithm/environment/path.sh
+/home/bev/bev_ws/build/tracking_algorithm/ament_cmake_environment_hooks/local_setup.dsv

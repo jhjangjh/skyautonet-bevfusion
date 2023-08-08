@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/bev/bev_ws/build/tcp_socket/ament_cmake_environment_hooks/path.dsv

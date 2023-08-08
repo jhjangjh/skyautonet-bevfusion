@@ -42,14 +42,10 @@ void Calculate::calculateRisk()
 {
   RCLCPP_INFO_STREAM(logger,"cal");
 
-  // MarkerArray risk_marker_arr;
-
-  // Marker delete_marker;
-  // delete_marker.action = Marker::DELETEALL; 
-  // risk_marker_arr.markers.push_back(delete_marker);
+  MarkerArray temp;
 
   for (std::vector<Object>::iterator itr = obj_vec_.begin(); itr != obj_vec_.end(); ++itr) {
-    if(itr->id == 145) continue;
+    // if(itr->id == 145) continue;
     double distance;
     double rel_velocity;
     double ttc;
@@ -58,44 +54,85 @@ void Calculate::calculateRisk()
     rel_velocity = GetRelativeVelocity(ego_vx_,ego_vy_,itr->twist.linear.x,itr->twist.linear.y);
     ttc = GetTTC(distance,rel_velocity);
 
-    RCLCPP_INFO_STREAM(logger,"Object ID :" << itr->id);
-    RCLCPP_INFO_STREAM(logger,"distance :" << distance);
-    RCLCPP_INFO_STREAM(logger,"relative velocity :" << rel_velocity);
-    RCLCPP_INFO_STREAM(logger,"time to collision :" << ttc);
+    // RCLCPP_INFO_STREAM(logger,"Object ID :" << itr->id);
+    // RCLCPP_INFO_STREAM(logger,"distance :" << distance);
+    // RCLCPP_INFO_STREAM(logger,"relative velocity :" << rel_velocity);
+    // RCLCPP_INFO_STREAM(logger,"time to collision :" << ttc);
 
-    // Marker risk_marker;
+    Marker risk_marker;
 
-    // risk_marker.header.stamp = this->now();
-    // risk_marker.header.frame_id = "map";
+    risk_marker.header.stamp = this->now();
+    risk_marker.header.frame_id = "map";
 
-    // risk_marker.id = itr->id;
-    // risk_marker.ns = "risk";
-    // risk_marker.action = Marker::ADD;
-    // risk_marker.type = Marker::TEXT_VIEW_FACING;
-    // std::string id_text = std::to_string(ttc);
-    // risk_marker.text = id_text;
+    risk_marker.id = itr->id;
+    risk_marker.ns = "risk";
+    risk_marker.action = Marker::ADD;
+    risk_marker.type = Marker::TEXT_VIEW_FACING;
+    std::string id_text = std::to_string(ttc);
+    risk_marker.text = id_text;
 
-    // risk_marker.pose.position.x = itr->pose.position.x;
-    // risk_marker.pose.position.y = itr->pose.position.y;
-    // risk_marker.pose.position.z = itr->pose.position.z;
-    // risk_marker.pose.orientation.x = 0.0;
-    // risk_marker.pose.orientation.y = 0.0;
-    // risk_marker.pose.orientation.z = 0.0;
-    // risk_marker.pose.orientation.w = 1.0;
+    risk_marker.pose.position.x = itr->pose.position.x;
+    risk_marker.pose.position.y = itr->pose.position.y;
+    risk_marker.pose.position.z = itr->pose.position.z;
 
-    // risk_marker.scale.x = 5;
-    // risk_marker.scale.y = 5;
-    // risk_marker.scale.z = 5;
-    // risk_marker.color.a = 0.7;
-    // risk_marker.color.r = 1.0;
-    // risk_marker.color.g = 1.0;
-    // risk_marker.color.b = 1.0;
 
-    // risk_marker_arr.markers.push_back(risk_marker);
+    risk_marker.pose.orientation.x = 0.0;
+    risk_marker.pose.orientation.y = 0.0;
+    risk_marker.pose.orientation.z = 0.0;
+    risk_marker.pose.orientation.w = 1.0;
+
+    risk_marker.scale.x = 10;
+    risk_marker.scale.y = 10;
+    risk_marker.scale.z = 10;
+    risk_marker.color.a = 0.7;
+
+    if(ttc>100)
+    {
+      risk_marker.color.a = 0.0;
+      risk_marker.color.r = 0.0;
+      risk_marker.color.g = 0.0;
+      risk_marker.color.b = 0.0;
+    }
+
+    else if(ttc>5)
+    {
+      risk_marker.color.r = 0.0;
+      risk_marker.color.g = 0.0;
+      risk_marker.color.b = 1.0;
+    }
+    else if(ttc>3.5)
+    {
+      risk_marker.color.r = 0.0;
+      risk_marker.color.g = 1.0;
+      risk_marker.color.b = 0.0;
+    }
+    else if(ttc>2)
+    {
+      risk_marker.color.r = 1.0;
+      risk_marker.color.g = 1.0;
+      risk_marker.color.b = 0.0;
+    }
+    else if(ttc>0.1)
+    {
+      risk_marker.color.r = 1.0;
+      risk_marker.color.g = 0.0;
+      risk_marker.color.b = 0.0;
+    }
+    else
+    {
+      risk_marker.color.r = 1.0;
+      risk_marker.color.g = 1.0;
+      risk_marker.color.b = 1.0;
+    }
+
+
+    temp.markers.push_back(risk_marker);
 
   }
 
-  // marker_pub_->publish(risk_marker_arr);
+  risk_marker_arr = temp;
+
+  marker_pub_->publish(risk_marker_arr);
 }
 
 double Calculate::GetDistance(double x1, double y1, double x2, double y2)

@@ -61,4 +61,6 @@ public:
 
     std::vector<Object> obj_vec_;
 
+    MarkerArray risk_marker_arr;
+
 };

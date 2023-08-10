@@ -31,7 +31,7 @@ void SortRos::setup() {
                                             rclcpp::QoS(rclcpp::KeepLast(10)));                                            
 
   sub = this->create_subscription<custom_msgs::msg::OutputArray>(
-      "/bev_output", rclcpp::QoS(rclcpp::KeepLast(10)),
+      "/bev_outputs", rclcpp::QoS(rclcpp::KeepLast(10)),
       std::bind(&SortRos::rectArrayCallback, this, std::placeholders::_1));
 }
 

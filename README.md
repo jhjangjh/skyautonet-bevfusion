@@ -33,6 +33,8 @@ ros2 launch tracking_algorithm tracking_launch.py
 
 ## TCP Socket
 
+<img src="assets/tcp_image.png" width="40%"/>
+
 ### Prerequisites
 - Server
   - ROS2(Foxy)
@@ -40,8 +42,8 @@ ros2 launch tracking_algorithm tracking_launch.py
 - Client
 
 ### Algorithm
+
 TCP socket programming with ROS2.
-<img src="assets/tcp_image.png" width="40%"/>
 
 ### Usage
 **Server**

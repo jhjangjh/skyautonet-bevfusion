@@ -36,11 +36,12 @@ ros2 launch tracking_algorithm tracking_launch.py
 ### Prerequisites
 - Server
   - ROS2(Foxy)
+
 - Client
 
 ### Algorithm
 TCP socket programming with ROS2.
-
+<img src="assets/tcp_image.png" width="40%"/>
 
 ### Usage
 **Server**
@@ -51,7 +52,7 @@ ros2 run tcp_socket tcp_socket
 Client
 ```linux
 g++ -o client client.cpp
-./client [YOUR] [HOST] [PC] [IP]
+./client [YOUR].[HOST].[PC].[IP]
 ```
 
 ---
@@ -63,7 +64,7 @@ g++ -o client client.cpp
 - ROS2(Foxy)
 
 ### Algorithm
-Calculate TTC(Time To Collision) in Carla simulator.
+Calculate TTC (Time To Collision) of surrounding vehicles in Carla simulator.
 
 ### Usage
 ```linux

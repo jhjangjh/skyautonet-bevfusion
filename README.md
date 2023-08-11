@@ -28,3 +28,47 @@ ros2 launch tracking_algorithm tracking_launch.py
 > https://github.com/mcximing/sort-cpp **mcximing/sort-cpp**
 >
 > https://github.com/Hyun-je/SORT-ros **Hyun-je/SORT-ros**
+
+---
+
+## TCP Socket
+
+### Prerequisites
+- Server
+  - ROS2(Foxy)
+- Client
+
+### Algorithm
+TCP socket programming with ROS2.
+
+
+### Usage
+**Server**
+```linux
+ros2 run tcp_socket tcp_socket
+```
+
+Client
+```linux
+g++ -o client client.cpp
+./client [YOUR] [HOST] [PC] [IP]
+```
+
+---
+## Risk Assessment
+<img src="assets/riskassessment.gif" width="40%"/>
+
+### Prerequisites
+- Carla 0.9.12
+- ROS2(Foxy)
+
+### Algorithm
+Calculate TTC(Time To Collision) in Carla simulator.
+
+### Usage
+```linux
+ros2 run risk_assessment risk_assessment
+```
+
+
+
